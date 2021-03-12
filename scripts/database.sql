@@ -59,6 +59,49 @@ CREATE TABLE IF NOT EXISTS coin_mintage (
     CONSTRAINT fk_coin_id FOREIGN KEY(coin_id) REFERENCES coin(coin_id)
 );
 
+/*Added coins*/
+CREATE TABLE IF NOT EXISTS added_coin (
+    added_coin_id INT GENERATED ALWAYS AS IDENTITY,
+    coin_id INT NOT NULL,
+    user_id INT NOT NULL,
+    grade VARCHAR(20),
+    coin_value VARCHAR(20),
+    amount INT,
+    design VARCHAR(20),
+    in_set VARCHAR(20),
+    image_path VARCHAR(1000),
+    comment VARCHAR(1000),
+    swap_availability BOOLEAN,
+    PRIMARY KEY(added_coin_id),
+    CONSTRAINT fk_coin_id FOREIGN KEY(coin_id) REFERENCES coin(coin_id),
+    CONSTRAINT fk_user_id FOREIGN KEY(user_id) REFERENCES user_account(user_id)
+);
+
+/*Coincard swap settings (enable or disable all coins in the coincard)*/
+CREATE TABLE IF NOT EXISTS coincard_swap_settings (
+    coincard_swap_settings_id INT GENERATED ALWAYS AS IDENTITY,
+    coin_id INT NOT NULL,
+    user_id INT NOT NULL,
+    swap_enabled BOOLEAN,
+    PRIMARY KEY(coincard_swap_settings_id),
+    CONSTRAINT fk_coin_id FOREIGN KEY(coin_id) REFERENCES coin(coin_id),
+    CONSTRAINT fk_user_id FOREIGN KEY(user_id) REFERENCES user_account(user_id)
+);
+
+/*Wanted coin*/
+CREATE TABLE IF NOT EXISTS wanted_coin (
+    wanted_coin_id INT GENERATED ALWAYS AS IDENTITY,
+    coin_id INT NOT NULL,
+    user_id INT NOT NULL,
+    grade VARCHAR(20),
+    amount INT,
+    design VARCHAR(20),
+    in_set VARCHAR(20),
+    comment VARCHAR(1000),
+    PRIMARY KEY(wanted_coin_id),
+    CONSTRAINT fk_coin_id FOREIGN KEY(coin_id) REFERENCES coin(coin_id)
+);
+
 
 /*Insert queries*/
 /*Insert test data into 'user_status' table*/
@@ -88,4 +131,14 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES (1, 32000000, 50000, 3500, 'Mint of Finland');
 INSERT INTO coin_mintage (coin_id, mintage_total, uncirculated, brilliant_uncirculated, proof, mint) 
     VALUES (2, 30000000, 50000, 3500, 'Mint of Finland');
+*/
+/*Insert added coin into 'added coin'*/
+/*INSERT INTO added_coin (coin_id, user_id, grade, coin_value, amount, comment, swap_availability) VALUES (8, 1, 'UNC', '2.5 eur', 1, 'My first coin...', false);
+INSERT INTO added_coin (coin_id, user_id, grade, coin_value, amount, comment, swap_availability) VALUES (2, 1, 'UNC', '0.1 cent', 2, 'My second coin...', true);
+*/
+/*Insert wanted coin into 'wanted_coin'*/
+/*INSERT INTO wanted_coin (coin_id, user_id, grade, amount, comment) VALUES (3, 1, 'UNC', 1, 'Want this coin');
+*/
+/*Insert coincard coin swap settings value*/
+/*INSERT INTO coincard_swap_settings (coin_id, user_id, swap_enabled) VALUES (8, 1, false);
 */
