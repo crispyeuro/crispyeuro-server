@@ -123,6 +123,43 @@ CREATE TABLE IF NOT EXISTS user_message (
     CONSTRAINT fk_user_id FOREIGN KEY(sender_id) REFERENCES user_account(user_id)
 );
 
+/*"Swap request" table. sender_offered_coins accepts coins' id from sender's "added coins" table*/
+/*receiver_coin accepts user's coin id from 'added coins'*/
+CREATE TABLE IF NOT EXISTS swap_request (
+    swap_request_id INT GENERATED ALWAYS AS IDENTITY,
+    sender_id INT,
+    receiver_id INT,
+    sender_offered_coins INTEGER[],
+    receiver_coin INT,
+    created TIMESTAMP,
+    comment VARCHAR(2000),
+    archived BOOLEAN,
+    PRIMARY KEY(swap_request_id),
+    CONSTRAINT fk_sender_id FOREIGN KEY(sender_id) REFERENCES user_account(user_id)
+);
+
+/*"Swap request changes" table. offered_coins accept coins' id from sender's "added coins" table*/
+CREATE TABLE IF NOT EXISTS swap_request_changes (
+    swap_request_changes_id INT GENERATED ALWAYS AS IDENTITY,
+    swap_request_id INT,
+    offered_coins INTEGER[],
+    offer_date_time TIMESTAMP,
+    PRIMARY KEY(swap_request_changes_id),
+    CONSTRAINT fk_swap_request_id FOREIGN KEY(swap_request_id) REFERENCES swap_request(swap_request_id)
+);
+
+/*Swap request message*/
+CREATE TABLE IF NOT EXISTS swap_request_message (
+    swap_request_message_id INT GENERATED ALWAYS AS IDENTITY,
+    swap_request_id INT UNIQUE,
+    sender_id INT,
+    receiver_id INT,
+    message VARCHAR(2000),
+    created TIMESTAMP,
+    PRIMARY KEY(swap_request_message_id),
+    CONSTRAINT fk_swap_request_id FOREIGN KEY(swap_request_id) REFERENCES swap_request(swap_request_id),
+    CONSTRAINT fk_sender_id FOREIGN KEY(sender_id) REFERENCES user_account(user_id)
+);
 
 /*Insert queries*/
 /*Insert test data into 'user_status' table*/
