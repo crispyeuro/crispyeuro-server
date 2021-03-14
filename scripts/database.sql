@@ -102,6 +102,27 @@ CREATE TABLE IF NOT EXISTS wanted_coin (
     CONSTRAINT fk_coin_id FOREIGN KEY(coin_id) REFERENCES coin(coin_id)
 );
 
+/*Contact*/
+CREATE TABLE IF NOT EXISTS contact (
+    contact_id INT GENERATED ALWAYS AS IDENTITY,
+    user_id INT,
+    user_contact_id INT UNIQUE,
+    PRIMARY KEY(contact_id),
+    CONSTRAINT fk_user_id FOREIGN KEY(user_id) REFERENCES user_account(user_id)
+);
+
+/*Message*/
+CREATE TABLE IF NOT EXISTS user_message (
+    message_id INT GENERATED ALWAYS AS IDENTITY,
+    sender_id INT,
+    receiver_id INT,
+    message VARCHAR(2000),
+    created TIMESTAMP,
+    read_receiver BOOLEAN,
+    PRIMARY KEY(message_id),
+    CONSTRAINT fk_user_id FOREIGN KEY(sender_id) REFERENCES user_account(user_id)
+);
+
 
 /*Insert queries*/
 /*Insert test data into 'user_status' table*/
