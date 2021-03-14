@@ -24,6 +24,19 @@ CREATE TABLE IF NOT EXISTS user_status (
     CONSTRAINT fk_user_id FOREIGN KEY(user_id) REFERENCES user_account(user_id)
 );
 
+/*User collection settings*/
+CREATE TABLE IF NOT EXISTS collection_settings (
+    collection_settings_id INT GENERATED ALWAYS AS IDENTITY,
+    user_id INT,
+    basic_level BOOLEAN,
+    advanced_level BOOLEAN,
+    very_advanced_level BOOLEAN,
+    missing_coins BOOLEAN,
+    german_mints BOOLEAN,
+    PRIMARY KEY(collection_settings_id),
+    CONSTRAINT fk_user_id FOREIGN KEY(user_id) REFERENCES user_account(user_id)
+);
+
 /*Coin*/
 CREATE TABLE IF NOT EXISTS coin (
     coin_id INT GENERATED ALWAYS AS IDENTITY,
