@@ -5,6 +5,7 @@
         "start": "./server.sh"
     },
     "dependencies": {
+        "express": "^4.17.1",
         "pg": "^8.5.1"
     }
 }
