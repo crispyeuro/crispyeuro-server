@@ -7935,3 +7935,1323 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
 */
+
+/*Insert 2004 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2004, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Summer Olympics in Athens 2004');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2004, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Fifth Enlargement of the European Union in 2004');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2004, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Effigy and Monogram of Grand Duke Henri');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2004, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Fifth Decade of the World Food Programme');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2004, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Bartolomeo Borghesi');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2004, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '75th anniversary of the Foundation of the Vatican City State');
+*/
+/*Insert 2005 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2005, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th birthday of Grand Duke Henri, 5th anniversary of his accession to the throne and 100th anniversary of the death of Grand Duke Adolphe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2005, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Belgium-Luxembourg Economic Union');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2005, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '4th Centenary of the first edition of Miguel de Cervantes` El ingenioso hidalgo Don Quixote de la Mancha');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Austria', 2005, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Austrian State Treaty');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2005, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'World Year of Physics 2005');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2005, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '60th anniversary of the establishment of the United Nations and 50th anniversary of Finland`s UN membership');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2005, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '1st anniversary of the signing of the European Constitution');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2005, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '20th World Youth Day, held in Cologne in August 2005');
+*/
+/*Insert 2006 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2006, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Winter Olympics in Turin 2006');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2006, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25th birthday of Hereditary Grand Duke Guillaume');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2006, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Holstentor in Lübeck (Schleswig-Holstein)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2006, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Renovation of the Atomium in Brussels');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2006, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '1st Centenary of the Introduction of Universal and Equal Suffrage');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2006, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th anniversary of the death of Christopher Columbus');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2006, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th anniversary of the Swiss Guard');
+*/
+/*Insert 2007 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2007, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Schwerin Castle (Mecklenburg-Vorpommern)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2007, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Grand Ducal Palace');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2007, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '80th birthday of Pope Benedict XVI');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2007, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Portuguese Presidency of the Council of the European Union');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Monaco', 2007, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25th anniversary of the death of Grace Kelly');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2007, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th birthday of Giuseppe Garibaldi');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2007, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '90th anniversary of Finland independence');
+*/
+/*Insert 2007 year common commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Austria', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Ireland', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Netherlands', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
+*/
+/*Insert 2008 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'St. Michaelis Church (Hamburg)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Berg Castle');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '60th anniversary of the Universal Declaration of Human Rights');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'European Year of Intercultural Dialogue');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '60th anniversary of the Universal Declaration of Human Rights');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th birthday of Primož Trubar');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'French Presidency of the Council of the European Union');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '60th anniversary of the Universal Declaration of Human Rights');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '2008 – Year of Saint Paul the Apostle');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '60th anniversary of the Universal Declaration of Human Rights');
+*/
+/*Insert 2009 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '90th anniversary of Grand Duchess Charlotte Accession to the Throne');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ludwigskirche in Saarbrücken (Saarland)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'European Year of Creativity and Innovation');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '2009 Lusophony Games');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th birthday of Louis Braille');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th birthday of Louis Braille');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '20th anniversary of the Start of the Velvet Revolution');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'International Year of Astronomy');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of Finnish Autonomy');
+*/
+/*Insert 2009 year common commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Ireland', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Austria', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Cyprus', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Netherlands', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
+*/
+/*Insert 2010 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Arms of the Grand Duke');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'City Hall and Roland (Bremen)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Historic Centre of Córdoba');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the Botanical Garden of Ljubljana');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th birthday of Camillo Benso, conte di Cavour');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Belgian Presidency of the Council of the European Union');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Appeal of 18 June');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Centenary of the Portuguese Republic');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th anniversary of the death of Sandro Botticelli');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Year for Priests');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Currency Decree of 1860 granting Finland the right to issue banknotes and coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25th Centenary of the Battle of Marathon');
+*/
+/*Insert 2011 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '20th anniversary of Foundation of the Visegrád Group');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Netherlands', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th anniversary of the Publication of The Praise of Folly by Desiderius Erasmus');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Cologne Cathedral (North Rhine-Westphalia)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Appointment of Jean, Grand Duke of Luxembourg by his mother Charlotte, Grand Duchess of Luxembourg as lieutenant-représentant');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Patio de los Leones of the Alhambra, Generalife and Albayzín, Granada');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th birthday of Franc Rozman – Stane');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '1st Centenary of the International Women`s Day');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150th anniversary of Italian unification');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of Fête de la Musique');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '2011 Special Olympics World Summer Games in Athens from 25 June to 4 July 2011');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th birthday of Giorgio Vasari');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Monaco', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Wedding of Prince Albert and Charlene Wittstock');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th birthday of Fernão Mendes Pinto');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the Bank of Finland (Suomen Pankki)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'First election of representatives in 1849');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '26th World Youth Day in August 2011');
+*/
+/*Insert 2012 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Neuschwanstein Castle near Füssen (Bavaria)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the death of William IV, Grand Duke of Luxembourg');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Burgos Cathedral');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '75th anniversary of the Queen Elisabeth Music Competition');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Guimarães, European Capital of Culture 2012');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th birthday of Abbé Pierre');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Monaco', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th anniversary of the foundation of Monaco`s sovereignty');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the death of Giovanni Pascoli');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '1887 Majority Representation');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years Helene Schjerfbeck');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '7th World Meeting of Families');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Royal Wedding of Guillaume, Hereditary Grand Duke of Luxembourg to Countess Stéphanie de Lannoy');
+*/
+/*Insert 2012 year common commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Austria', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Ireland', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Cyprus', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Ntherlands', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
+*/
+/*Insert 2013 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years of Franco-German Friendship (Élysée Treaty)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years of Franco-German Friendship (Élysée Treaty)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Maulbronn Abbey in Baden-Württemberg');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '800 years since the discovery of the Postojna Cave');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Netherlands', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'The announcement of the abdication of the throne by Her Majesty Queen Beatrix');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Monastery and Site of the Escorial, Madrid');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200 years since the birth of Giuseppe Verdi');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150th anniversary of the birth of Pierre de Coubertin');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Sede vacante');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Monaco', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '20th anniversary of its accession to the ONU on 28 May 1993');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '250th anniversary of the Clérigos Tower, Porto');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Establishment of Self-Government in 1921');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '1150 years from the Byzantine Advent of advent of the Mission of Constantine and Methodius to the Great Moravia');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '700th birthday of Giovanni Boccaccio');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150th anniversary of the Parliament of 1863 when regular parliament sessions started in Finland');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th anniversary of the death of Pinturicchio');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years of Royal Meteorological Institute');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th anniversary of the Union of Crete with Greece');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '2400th anniversary of the Founding of the Platonic Academy');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '28th World Youth Day – Rio de Janeiro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'National Anthem of the Grand Duchy');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '125th anniversary of the birth of Nobel Prize-winning author Frans Eemil Sillanpää');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Netherlands', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the Kingdom of the Netherlands');
+*/
+/*Insert 2014 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years of Franco-German Friendship (Élysée Treaty)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years of Franco-German Friendship (Élysée Treaty)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Maulbronn Abbey in Baden-Württemberg');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '800 years since the discovery of the Postojna Cave');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'The announcement of the abdication of the throne by Her Majesty Queen Beatrix');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Monastery and Site of the Escorial, Madrid');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200 years since the birth of Giuseppe Verdi');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Netherlands', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150th anniversary of the birth of Pierre de Coubertin');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Sede vacante');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '20th anniversary of its accession to the ONU on 28 May 1993');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '250th anniversary of the Clérigos Tower, Porto');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Establishment of Self-Government in 1921');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '1150 years from the Byzantine Advent of advent of the Mission of Constantine and Methodius to the Great Moravia');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '700th birthday of Giovanni Boccaccio');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150th anniversary of the Parliament of 1863 when regular parliament sessions started in Finland');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th anniversary of the death of Pinturicchio');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years of Royal Meteorological Institute');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th anniversary of the Union of Crete with Greece');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '2400th anniversary of the Founding of the Platonic Academy');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '28th World Youth Day – Rio de Janeiro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'National Anthem of the Grand Duchy');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '125th anniversary of the birth of Nobel Prize-winning author Frans Eemil Sillanpää');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the Kingdom of the Netherlands');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the Kingdom of the Netherlands');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the Kingdom of the Netherlands');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the Kingdom of the Netherlands');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the Kingdom of the Netherlands');
+*/
+/*Insert 2015 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Paulskirche in Frankfurt am Main');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25 years of German Unity');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '70 years of peace in Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Cave of Altamira and Paleolithic Cave Art of Northern Spain');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'EU Presidency');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years since the birth of Jean Sibelius');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '750 years since the birth of Dante Alighieri');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years Portuguese Red Cross');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Universal Exposition Expo 2015 in Milan');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the first flight from Malta');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '15th anniversary of Grand Duke Henri Accession to the Throne');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Proclamation of the Republic of Malta in 1974');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '750 years since the birth of Dante Alighieri');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500 years since first Contact with Timor');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '225. anniversary of Fête de la Fédération');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'European Year for Development');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25 years of German Unity');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'VIII World Meeting of Families – Philadelphia 2015');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '125th anniversary of the Nassau-Weilburg Dynasty');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years since the birth of Akseli Gallen-Kallela');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200 years since the birth of Ľudovít Štúr');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '2000th anniversary of the Founding of Emona');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Monaco', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '800th anniversary of the Construction of the first Fortress on the Rock 1215');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Stork');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Lithuanian Language');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '75 years since the death of Spyridon Louis');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25 years of Customs Union with the EU');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30 years since 18 became Legal Age');
+*/
+/*Insert 2015 year common commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Netherlands', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Ireland', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Austria', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Cyprus', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
+*/
+/*Insert 2016 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Austria', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the founding of Austria`s central bank Oesterreichische Nationalbank');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the birth of Paul Keres');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Ireland', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since Easter Rising');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'XV European Football Championship');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Zwinger Palace in Dresden');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Old city of Segovia and its aqueduct');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Slovak Presidency of the Council of the European Union');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '2016 Summer Olympics – Rio de Janeiro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '550 years since the death of Donatello');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '90th anniversary of the death of Eino Leino');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '550 years since the death of Donatello');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Baltic Culture');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Portuguese athletes participating in the 2016 Summer Olympics');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years of Grand Duchess Charlotte Bridge');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '2200 years since the death of Plautus');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Child Focus');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Monaco', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150th anniversary of the founding of Monte Carlo by Charles III');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of Corps of Gendarmerie of Vatican City');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25 years of independence');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Dairy Farming');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years since inauguration of 25 April Bridge');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ġgantija');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the birth of François Mitterrand');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '400 years since the death of William Shakespeare');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Holy Year of Mercy');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th anniversary of the birth of Georg Henrik von Wright');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Vidzeme');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Solidarity through love');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years since the Arkadi Monastery torching');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '120 years since the birth of Dimitri Mitropoulos');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25th anniversary of the Radio and Television of Andorra');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years of the New Reform 1866');
+*/
+/*Insert 2017 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years since the foundation of the current Luxembourg Army');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Universitas Istropolitana – 550 years since the start of teaching');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of the adoption of the Euro');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the death of Auguste Rodin');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Porta Nigra in Trier');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Monuments of Oviedo and the Kingdom of Asturias: Santa María del Naranco');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '400 years since the completion of St Mark Basilica');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '750 years since the birth of Giotto');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200 years University of Liège');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ħaġar Qim');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years of independence');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '1950 years since the death of the martyrs Saint Peter and Paul the Apostle');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '2000 years since the death of Titus Livius');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Estonia road to independence');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '60 years since the death of Nikos Kazantzakis');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years of Public Security (PSP)');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Vilnius City of Culture');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'International year of Sustainable Tourism');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25 years of Breast cancer awareness');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200 years Ghent University');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the visions of Fátima');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Archaeological site of Philippi');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Finnish nature');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200 years since the birth of Grand Duke William III');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Cyprus', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Paphos, European Capital of Culture 2017');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Solidarity and peace');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Monaco', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200 years since the establishment of the Compagnie des Carabiniers du Prince');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Courland');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Latgale');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years since the birth of Raul Brandão');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years of the anthem of Andorra');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Andorra – The Pyrenean country');
+*/
+/*Insert 2018 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Austria', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the foundation of the Republic of Austria');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years since the Constitution of Luxembourg');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '70 years since the Constitution of Italy');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25th anniversary of the establishment of the Slovak Republic');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the birth of Helmut Schmidt');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Charlottenburg Palace in Berlin');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since independence. Common commemorative coin with Latvia and Lithuania');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since independence. Common commemorative coin with Estonia and Lithuania');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since independence. Common commemorative coin with Estonia and Latvia');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Old town of Santiago de Compostela');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years since the birth of Felipe VI of Spain');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since independence');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Bleuet de France');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '60 years since the formation of the Ministry of Health');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500 years since the birth of Tintoretto');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25th anniversary of the Andorran Constitution');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'World Bees Day');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '250 years since the foundation of the Imprensa Nacional Casa da Moeda');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Koli National Park');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'European Year of Cultural Heritage');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of May 1968 events in Belgium');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Mnajdra');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Monaco', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '250 years since the birth of François Joseph Bosio');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Simone Veil');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Lithuania Independence Centenary Song Celebration');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '250 years since the foundation of Ajuda Botanical Garden');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '175 years since the death of Grand Duke William I');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years since the launch of European satellite ESRO 2B');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '420 years since the birth of Gian Lorenzo Bernini');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Semigallia');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years since the death of Padre Pio');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Finnish Sauna culture');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '75 years since the death of Kostis Palamas');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '70th anniversary of the union of the Dodecanese with Greece');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Cultural heritage');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '70th anniversary of the Universal Declaration of Human Rights');
+*/
+/*Insert 2019 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th anniversary of Grand Duchess Charlotte accession to the throne');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Ireland', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Centenary of the first sitting of Dáil Éireann');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '450 years since the death of Pieter Bruegel the Elder');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500 years since the death of Leonardo da Vinci');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '70 years since the constitution of the Federal Council');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Old town of Ávila with its extra-muros churches');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '2019 FIS Alpine Ski World Cup final');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500 years since the death of Leonardo da Vinci');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the death of Milan Rastislav Štefánik');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '90th anniversary of the Foundation of the Vatican City State');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500 years since the circumnavigation of Magellan');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25 years since the creation of the European Monetary Institute');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ta Ħaġrat Temples');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150th anniversary of the first Estonian Song Festival');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '600 years since the discovery of Madeira and Porto Santo');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '60 years since the creation of Asterix');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Sutartinės, Lithuanian songs');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the birth of Manolis Andronikos');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years since the death of Andreas Kalvos');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '550 years since the death of Filippo Lippi');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Samogitia');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Monaco', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of Honoré V accession to the throne');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Coat of arms of Latvia rising sun');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years of Universal Suffrage in Luxembourg');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25 years since the restoration of the Sistine Chapel');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30 years since the Fall of the Berlin Wall. Common commemorative coin with France');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', ' 	30 years since the Fall of the Berlin Wall. Common commemorative coin with Germany');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Nature/Environment');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Constitution Act of 1919');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '600 years since the constitution of the General Council of Andorra');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the foundation of the Estonian language University of Tartu');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the foundation of the University of Ljubljana');
+*/
+/*Insert 2020 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '80th anniversary of the National Firefighters Corps');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200 years since the discovery of the Antarctic');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Brandenburg Sanssouci Palace in Potsdam');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Charles de Gaulle');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Mudéjar Architecture of Aragon');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th anniversary of the Treaty of Tartu');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Bicentenary of the birth of Prince Henry of Orange-Nassau');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'International year of plant health');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500 years since the death of Raphael');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Latgalian ceramics');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years since the birth of Maria Montessori');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the birth of Pope John Paul II');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25th Centenary of the Battle of Thermopylae');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th anniversary of the union of Thrace with Greece');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Skorba Temples');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the foundation of the University of Turku');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '250 years since the death of Giovanni Battista Tiepolo');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '730 years since the foundation of the University of Coimbra');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Aukštaitija');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '75 years since the formation of the United Nations');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years since the Kniefall von Warschau');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Jan van Eyck');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500 years since the death of Raphael');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Monaco', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '300 years since the birth of Honoré III');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Medical Research');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Hill of Crosses');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '20 years of Slovakian membership in the OECD');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the birth of Väinö Linna');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '27th Ibero-American Summit in Andorra');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Andorra', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years since Andorra introduction of women suffrage');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Childrens game');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Cyprus', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30 years since the foundation of the Cyprus Institute of Neurology and Genetics');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500 years since the birth of Adam Bohorič');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Birth of Prince Charles of Luxembourg');
+*/
+/*Insert 2021 year commemorative coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Portuguese Presidency of the Council of the European Union');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Latvia', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th anniversary of the recognition of the Republic of Latvia');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Germany', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Saxony-Anhalt Cathedral of Magdeburg');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150th anniversary of the proclamation of Rome as the capital of Italy');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '450 years since the birth of Caravaggio');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Spain', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Historic city of Toledo');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '75 years since the foundation of UNICEF');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Journalism and Open Communication in Support of Finnish Democracy');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Finno-Ugric peoples');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the birth of Jean, Grand Duke of Luxembourg');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Luxembourg', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '40 years since the wedding of Henri, Grand Duke of Luxembourg and Maria Teresa, Grand Duchess of Luxembourg');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Žuvintas biosphere reserve');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Italy', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Health professionals');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Heroes of the pandemic');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the signing of the Belgium–Luxembourg Economic Union');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('France', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Handover of the Olympic flag');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Belgium', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500 years since the issuance of the Carolus guilder');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Malta', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Tarxien Temples');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovenia', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200 years since the foundation of the museum of Kranj');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Slovakia', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the birth of Alexander Dubček');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Estonia', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'The wolf');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Finland', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th anniversary of self-government in the Åland Region');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Greece', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200 years since the Greek Revolution');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Lithuania', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Dzūkija');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Portugal', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Participation in the Summer Olympics 2021');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('San-Marino', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '550 years since the birth of Albrecht Dürer');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '450 years since the birth of Caravaggio');
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+    VALUES ('Vatican', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
+	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '700 years since the death of Dante Alighieri');
+*/
