@@ -45,14 +45,37 @@ app.get('/api/first-row', (serverRequest, serverResponse) => {
 });
 
 app.get('/api/lala', (serverRequest, serverResponse) => {
-    const {year, country, nominal} = serverRequest.query;
-    client.query('SELECT * FROM coin WHERE issue_year = $1 AND country = $2 AND denomination = $3', [year, country, nominal], (err, databaseResponse) => {
+    const {coin_id} = serverRequest.query;
+    client.query('SELECT * FROM coin WHERE coin_id = $1', [coin_id], (err, databaseResponse) => {
         if (err) {
             console.log(err.stack);
         } else {
             serverResponse.json(databaseResponse.rows);
         }
     });
+});
+
+app.get('/api/commemorativeCountryRequest', (serverRequest, serverResponse) => {
+    const {issue_year = null, country = null, coin_type = null} = serverRequest.query;
+    let coin_type_common = "commemorative_common";
+    if (issue_year === null && country !== null && coin_type !== null) {
+        client.query('SELECT * FROM coin WHERE country = $1 AND coin_type = $2 OR country = $1 AND coin_type = $3 ORDER BY issue_year ASC;', [country, coin_type, coin_type_common], (err, databaseResponse) => {
+            if (err) {
+                console.log(err.stack);
+            } else {
+                serverResponse.json(databaseResponse.rows);
+            }
+        });
+    }
+    if (country === null && issue_year !== null && coin_type !== null) {
+        client.query('SELECT * FROM coin WHERE issue_year = $1 AND coin_type = $2 OR issue_year = $1 AND coin_type = $3 ORDER BY country ASC;', [issue_year, coin_type, coin_type_common], (err, databaseResponse) => {
+            if (err) {
+                console.log(err.stack);
+            } else {
+                serverResponse.json(databaseResponse.rows);
+            }
+        });
+    }
 });
 
 app.listen(8080, () => {
