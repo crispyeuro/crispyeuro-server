@@ -78,6 +78,17 @@ app.get('/api/commemorativeCountryRequest', (serverRequest, serverResponse) => {
     }
 });
 
+app.get('/api/countryRequest', (serverRequest, serverResponse) => {
+    const {country} = serverRequest.query;
+    client.query('SELECT * FROM coin WHERE country = $1 ORDER BY issue_year ASC;', [country], (err, databaseResponse) => {
+        if (err) {
+            console.log(err.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 app.listen(8080, () => {
     console.log('server is running...');
 })
