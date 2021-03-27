@@ -71,6 +71,7 @@ CREATE TABLE IF NOT EXISTS coin_mintage (
     PRIMARY KEY(coin_mintage_id),
     CONSTRAINT fk_coin_id FOREIGN KEY(coin_id) REFERENCES coin(coin_id)
 );
+/*ALTER TABLE coin_mintage ALTER COLUMN issue_date TYPE VARCHAR(50);*/
 
 /*Added coins*/
 CREATE TABLE IF NOT EXISTS added_coin (
@@ -9254,4 +9255,87 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Vatican', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '700 years since the death of Dante Alighieri');
+*/
+/*
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('9', '25.000.000', '2012', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('10', '14.000.000', '2015', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('13', '20.000', '2016', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('21', '29.000.000', '2017', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('25', '500.000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('33', '10.000.000', '2019', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+*/
+
+/*Insert coin mintages into 'coin_mintage' table*/
+/*INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('9', '25000000', '2012', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('10', '14000000', '2015', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('13', '20000', '2016', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('21', '29000000', '2017', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('25', '500000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('33', '10000000', '2019', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('10', '25000000', '2012', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('12', '17100000', '2015', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('14', '20000', '2016', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('22', '9000000', '2017', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('26', '8500000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('34', '2000000', '2020', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('3', '30000000', '2011', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('15', '20000', '2016', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('23', '4550000', '2017', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('27', '8500000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('4', '30000000', '2011', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('16', '20000', '2016', 'In sets Only. Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('28', '500000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('5', '25000000', '2011', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('15', '20000', '2016','Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('24', '3250000', '2017', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('29', '4000000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('35', '1500000', '2020', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('6', '20000000', '2011', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('18', '20000', '2016', 'In sets Only. Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('30', '500000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('7', '16000000', '2011', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('19', '20000', '2016', 'In sets Only. Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('31', '500000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('8', '11000000', '2011', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('20', '20000', '2016', 'In sets Only. Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('32', '500000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
 */
