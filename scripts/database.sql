@@ -9378,3 +9378,23 @@ INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description
 INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('3611', '1000000', 'June 2004', 'Mintage information source: https://www.ecb.europa.eu/euro/coins/comm/html/comm_2004.en.html');
 */
+/*Insert Estonian coin images into 'coin' table*/
+/*UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/2eur_2011_500px.jpg' WHERE coin_id = 3705;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/ellipp30_500px.jpg' WHERE coin_id = 3815;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/keres_500px.jpg' WHERE coin_id = 3819;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/eesti-teel-iseseisvusele_2eurone.png' WHERE coin_id = 3863;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/balti100.jpg' WHERE coin_id = 3888;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/ev1002e.png' WHERE coin_id = 3893;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/laulupidu-_2019.jpg' WHERE coin_id = 3931;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/rahvusylikool100_mynt.jpg' WHERE coin_id = 3948;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/img_8495_puhas_1.jpg' WHERE coin_id = 3951;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/tartu_rahu_re_2020.jpg' WHERE coin_id = 3955;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/1cent.jpg' WHERE coin_id = 1;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/2cent.jpg' WHERE coin_id = 2;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/5cent.jpg' WHERE coin_id = 3;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/10cent.jpg' WHERE coin_id = 4;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/20cent.jpg' WHERE coin_id = 5;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/50cent.jpg' WHERE coin_id = 6;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/1eur.jpg' WHERE coin_id = 7;
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/2eur.jpg' WHERE coin_id = 8;
+*/
