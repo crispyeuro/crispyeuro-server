@@ -9256,6 +9256,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '700 years since the death of Dante Alighieri');
 */
+
+/*Insert Estonian coin mintages into 'coin_mintage' table*/
 /*
 INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('9', '25.000.000', '2012', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
@@ -9269,10 +9271,7 @@ INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description
     VALUES ('25', '500.000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
 INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('33', '10.000.000', '2019', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
-*/
-
-/*Insert coin mintages into 'coin_mintage' table*/
-/*INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('9', '25000000', '2012', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
 INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('10', '14000000', '2015', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
@@ -9338,4 +9337,44 @@ INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description
     VALUES ('20', '20000', '2016', 'In sets Only. Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
 INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('32', '500000', '2018', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
+INSERT INTO coin_mintage(coin_id, mintage_total, uncirculated, issue_date, mint, mintage_description) 
+    VALUES ('3705', '2000000', '2000000', '2012', 'Berlin Mint', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
+INSERT INTO coin_mintage(coin_id, mintage_total, uncirculated, brilliant_uncirculated, issue_date, mint, mintage_description) 
+    VALUES ('3815', '350000', '346500', '3500', '2012', 'Lithuanian Mint', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
+INSERT INTO coin_mintage(coin_id, mintage_total, uncirculated, brilliant_uncirculated, issue_date, mint, mintage_description) 
+    VALUES ('3819', '500000', '495000', '5000', '2015', 'Lithuanian Mint', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mint, mintage_description) 
+    VALUES ('3863', '1500000', '2017', 'Lithuanian Mint', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
+INSERT INTO coin_mintage(coin_id, mintage_total, uncirculated, brilliant_uncirculated, issue_date, mint, mintage_description) 
+    VALUES ('3888', '500000', '485000', '15000', '31.01.2018', 'Lithuanian Mint', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mint, mintage_description) 
+    VALUES ('3893', '1317800', '19.02.2018', 'Lithuanian Mint', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('3931', '1000000', '25.05.2019', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('3948', '1000000', '19.11.2019', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('3951', '750000', '27.01.2020', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('3955', '1000000', '1.02.2020', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
+*/
+/*Insert Finnish coin mintages into 'coin_mintage' table*/
+/*INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('629', '8100000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('630', '1785000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('631', '63380000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('632', '133520000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('633', '42350000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('634', '20696000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('635', '16210000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('636', '16090000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+    VALUES ('3611', '1000000', 'June 2004', 'Mintage information source: https://www.ecb.europa.eu/euro/coins/comm/html/comm_2004.en.html');
 */
