@@ -46,7 +46,7 @@ app.get('/api/first-row', (serverRequest, serverResponse) => {
 
 app.get('/api/lala', (serverRequest, serverResponse) => {
     const {coin_id} = serverRequest.query;
-    client.query('SELECT * FROM coin WHERE coin_id = $1', [coin_id], (err, databaseResponse) => {
+    client.query('SELECT * FROM coin LEFT OUTER JOIN coin_mintage ON coin.coin_id = coin_mintage.coin_id WHERE coin.coin_id = $1;', [coin_id], (err, databaseResponse) => {
         if (err) {
             console.log(err.stack);
         } else {
