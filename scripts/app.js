@@ -89,6 +89,17 @@ app.get('/api/countryRequest', (serverRequest, serverResponse) => {
     });
 });
 
+app.get('/api/denominationRequest', (serverRequest, serverResponse) => {
+    const { denomination } = serverRequest.query;
+    client.query('SELECT * FROM coin WHERE denomination = $1 ORDER BY coin.country, coin.issue_year ASC;', [denomination], (err, databaseResponse) => {
+        if (err) {
+            console.log(err.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 app.listen(8080, () => {
     console.log('server is running...');
 })
