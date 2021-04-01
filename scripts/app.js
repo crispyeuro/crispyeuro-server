@@ -45,8 +45,8 @@ app.get('/api/first-row', (serverRequest, serverResponse) => {
 });
 
 app.get('/api/lala', (serverRequest, serverResponse) => {
-    const {coin_id} = serverRequest.query;
-    client.query('SELECT * FROM coin LEFT OUTER JOIN coin_mintage ON coin.coin_id = coin_mintage.coin_id WHERE coin.coin_id = $1;', [coin_id], (err, databaseResponse) => {
+    const { coin_id } = serverRequest.query;
+    client.query('SELECT coin.*, coin_mintage.coin_mintage_id, coin_mintage.mintage_total, coin_mintage.uncirculated, coin_mintage.brilliant_uncirculated, coin_mintage.proof, coin_mintage.mintmark, coin_mintage.mint, coin_mintage.issue_date, coin_mintage.mintage_description FROM coin LEFT OUTER JOIN coin_mintage ON coin.coin_id = coin_mintage.coin_id WHERE coin.coin_id = $1;', [coin_id], (err, databaseResponse) => {
         if (err) {
             console.log(err.stack);
         } else {
@@ -56,7 +56,7 @@ app.get('/api/lala', (serverRequest, serverResponse) => {
 });
 
 app.get('/api/commemorativeCountryRequest', (serverRequest, serverResponse) => {
-    const {issue_year = null, country = null, coin_type = null} = serverRequest.query;
+    const { issue_year = null, country = null, coin_type = null } = serverRequest.query;
     let coin_type_common = "commemorative_common";
     if (issue_year === null && country !== null && coin_type !== null) {
         client.query('SELECT * FROM coin WHERE country = $1 AND coin_type = $2 OR country = $1 AND coin_type = $3 ORDER BY issue_year ASC;', [country, coin_type, coin_type_common], (err, databaseResponse) => {
@@ -79,8 +79,8 @@ app.get('/api/commemorativeCountryRequest', (serverRequest, serverResponse) => {
 });
 
 app.get('/api/countryRequest', (serverRequest, serverResponse) => {
-    const {country} = serverRequest.query;
-    client.query('SELECT * FROM coin WHERE country = $1 ORDER BY issue_year ASC;', [country], (err, databaseResponse) => {
+    const { country } = serverRequest.query;
+    client.query('SELECT coin.*, coin_mintage.coin_mintage_id, coin_mintage.mintage_total, coin_mintage.uncirculated, coin_mintage.brilliant_uncirculated, coin_mintage.proof, coin_mintage.mintmark, coin_mintage.mint, coin_mintage.issue_date, coin_mintage.mintage_description FROM coin LEFT OUTER JOIN coin_mintage ON coin.coin_id = coin_mintage.coin_id WHERE country = $1 ORDER BY coin.issue_year ASC;', [country], (err, databaseResponse) => {
         if (err) {
             console.log(err.stack);
         } else {
@@ -93,6 +93,6 @@ app.listen(8080, () => {
     console.log('server is running...');
 })
 
-process.on('exit', function() {
+process.on('exit', function () {
     client.end();
 });
