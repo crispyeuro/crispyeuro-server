@@ -9398,3 +9398,162 @@ UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/fil
 UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/1eur.jpg' WHERE coin_id = 7;
 UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/2eur.jpg' WHERE coin_id = 8;
 */
+/*Insert Estonian silver and gold coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path , diameter, 
+mass, edge, feature, coin_description) 
+    VALUES ('Estonia', 2011, '10', 'silver', 
+    'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/meenemundid/euro/10eu_2011_a_w.jpg', 
+    'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/meenemundid/euro/10eu_2011_b_w.jpg', 
+    38.61, 28.8, 'lettering Ag999,9', 'In celebration of the changeover to the euro', 
+    'Metal: Ag999,9. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, edge, feature, coin_description) 
+    VALUES ('Estonia', 2011, '20', 'gold', 
+    'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/meenemundid/euro/20eu_2011_a_w.jpg', 
+    'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/meenemundid/euro/20eu_2011_b_w.jpg', 
+    27.25, 14.6, 'lettering Ag999,9 ja Au999,9', 'In celebration of the changeover to the euro', 
+    'Metal: Ag999,9 (6.2 g); Au999,9 (8.4 g). Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2012, '12', 'silver', 
+    'https://www.eestipank.ee/sites/default/files/2012_12eur_b_w.jpg', 
+    'https://www.eestipank.ee/sites/default/files/2012_12eur_a_w.jpg', 
+    38.61, 28.28, 'In celebration of the London Summer Olympic Games', 
+    'Metal: Ag999,9. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2013, '7', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/files/Pangat2hed/meenemundid/euro/valgre_02.jpg', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/files/Pangat2hed/meenemundid/euro/valgre_01.jpg', 
+    38.61, 28.28, 'Collector coin dedicated to the music of Raimond Valgre', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2014, '10', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/sotsi02.jpg', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/sotsi01.jpg', 
+    38.61, 28.28, 'In celebration of the Olympic Winter Games in Sochi', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2014, '10', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/files/Pangat2hed/meenemundid/euro/miinaharma_a_small.jpg', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/files/Pangat2hed/meenemundid/euro/miinaharma_b_small.jpg', 
+    38.61, 28.28, 'Collector Coin dedicated to the work of Miina Härma', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2015, '10', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/evilde_10eur_avers_2.png', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/evilde_10eur_revers_2.png', 
+    38.61, 28.28, 'Collector Coin dedicated to the work of Eduard Vilde', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2016, '10', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/_q8q5083_lahtiselt_1.png', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/_q8q5099_lahtiselt_1.png', 
+    38.61, 28.28, 'Collector Coin dedicated to Jaan Poska', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2016, '10', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/rio_back_0.jpg', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/rio_front_0.jpg', 
+    38.61, 28.28, 'In celebration of the Olympic Summer Games in Rio de Janeiro', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2017, '8', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/tln_silver_500_vapppx_0.jpg', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/tln_silver_500px_0.jpg', 
+    38.61, 28.28, 'Collector Coin dedicated to Hanseatic Tallinn', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2017, '25', 'gold', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/tln_kuld_vapp_500px_0.jpg', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/tln_kuld_500px_0.jpg', 
+    18, 3.11, 'Collector Coin dedicated to Hanseatic Tallinn', 
+    'Metal: Au 999. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2018, '10', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/korea_back.png', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/korea_front.png', 
+    38.61, 28.28, 'In celebration of the Olympic Winter Games in Pyeongchang', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2018, '10', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/hobe_tagumine_www_0.png', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/hobe_eesmine_www_0.png', 
+    38.61, 28.28, 'Dedicated to the centenary of the Republic of Estonia', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2018, '100', 'gold', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/kuld_tagumine_www_0.png', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/kuld_esimene_www_0.png', 
+    22, 5.65, 'Dedicated to the centenary of the Republic of Estonia', 
+    'Metal: Au 999. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2018, '100', 'gold', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/kuld_tagumine_www_0.png', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/kuld_esimene_www_0.png', 
+    22, 5.65, 'Dedicated to the centenary of the Republic of Estonia', 
+    'Metal: Au 999. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2018, '15', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/tonisson_15eur_a_w2.png', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/tonisson_15eur_b_w2.png', 
+    38.61, 28.28, 'Dedicated to the 150th anniversary of the birth of Jaan Tõnisson', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2019, '12', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/jannsen_2_500px_0.jpg', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/jannsen_1_web.jpg', 
+    38.61, 28.28, 'Dedicated to the 200th anniversary of the birth of Johann Voldemar Jannsen', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2019, '8', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/viljandi_meenemynt_back_800px_0.jpg', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/viljandi_meenemynt_front_800px.jpg', 
+    38.61, 28.28, 'Dedicated to Hanseatic Viljandi', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Estonia', 2020, '15', 'silver', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/jaakson2_500px.jpg', 
+    'https://www.eestipank.ee/sites/eestipank.ee/files/jaakson1_500px.jpg', 
+    38.61, 28.28, 'Dedicated to the 150th anniversary of the birth of Jüri Jaakson', 
+    'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
+*/
+/*Insert Latvian silver and gold coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Latvia', 2014, '5', 'silver', 
+    'https://monetas.bank.lv/cache/thumbs/images_monetas_2014_2014_Baltijas_ce_Baltijas_Cels_rev_415_png_c3e6909ed52d5b1d2454c6d11d82131e_crop_415_by_415.png', 
+    'https://monetas.bank.lv/cache/thumbs/images_monetas_2014_2014_Baltijas_ce_Baltijas_Cels_av_415_png_753cba460ac4c02340536887eb868305_crop_415_by_415.png', 
+    35.00, 22.00, 'Baltic way', 
+    'Metal: silver of fineness .925. Source: https://monetas.bank.lv/en/coins/baltijas-cels');
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Latvia', 2017, '20', 'gold', 
+    'https://monetas.bank.lv/cache/thumbs/images_stories_atteli_Nauda_kolekcijas_Pakav_av_415_png_2e6297597488a47306af1a148a352383_crop_332_by_332.png', 
+    'https://monetas.bank.lv/cache/thumbs/images_stories_atteli_Nauda_kolekcijas_Pakav_rev_415_png_ca5fe73b0001a76b38157161ebe352f3_crop_332_by_332.png', 
+    21.00, 6.00, 'Gold Brooches. The Horseshoe Fibula', 
+    'Metal: 999.9° gold. Source: https://monetas.bank.lv/en/coins/gold-brooches-the-horseshoe-fibula');
+*/
+/*Insert Lithuanian silver coin into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type,diameter, 
+mass, feature, coin_description) 
+    VALUES ('Lithuania', 2019, '20', 'silver', 
+    38.61, 28.28, 'Coin dedicated to Sapieha Palace (from the series ''Lithuanian Castles and Manors'')', 
+    'Metal: Ag 925 . Source: https://monetos.lb.lt/en/eshop/coin-dedicated-to-sapieha-palace-from-the-series-lithuanian-castles-and-manors');
+*/
