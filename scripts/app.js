@@ -100,6 +100,16 @@ app.get('/api/denominationRequest', (serverRequest, serverResponse) => {
     });
 });
 
+app.get('/api/indexCoinsRequest', (serverRequest, serverResponse) => {
+    client.query("SELECT * FROM coin WHERE coin_type = 'silver' OR coin_type = 'gold' ORDER BY coin.country, coin.issue_year ASC;", (err, databaseResponse) => {
+        if (err) {
+            console.log(err.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 app.listen(8080, () => {
     console.log('server is running...');
 })

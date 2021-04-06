@@ -9557,3 +9557,4 @@ mass, feature, coin_description)
     38.61, 28.28, 'Coin dedicated to Sapieha Palace (from the series ''Lithuanian Castles and Manors'')', 
     'Metal: Ag 925 . Source: https://monetos.lb.lt/en/eshop/coin-dedicated-to-sapieha-palace-from-the-series-lithuanian-castles-and-manors');
 */
+/*DELETE FROM coin WHERE coin_id=4049;*/
