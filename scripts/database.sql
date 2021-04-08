@@ -9558,3 +9558,25 @@ mass, feature, coin_description)
     'Metal: Ag 925 . Source: https://monetos.lb.lt/en/eshop/coin-dedicated-to-sapieha-palace-from-the-series-lithuanian-castles-and-manors');
 */
 /*DELETE FROM coin WHERE coin_id=4049;*/
+/*Insert 'other' coins into 'coin' table*/
+/*INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, diameter, 
+mass, feature, coin_description) 
+    VALUES ('Portugal', 2020, '7.5', 'silver', 'https://en.numista.com/catalogue/photos/portugal/5efec215231e47.83991865-original.jpg',
+    33, 13.5, 'Historical trains', 
+    'Metal: Ag 500 . Source: https://en.numista.com/catalogue/pieces224726.html');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, diameter, 
+mass, composition, feature, coin_description) 
+    VALUES ('Portugal', 2011, '7.5', 'other', 'https://en.numista.com/catalogue/photos/portugal/5912-original.jpg',
+    33, 18.5, 'Copper-nickel', 'Numismatic Treasures - D. Manuel I of Portugal', 
+    'Source: https://en.numista.com/catalogue/pieces26922.html');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, diameter, 
+mass, composition, edge, feature, coin_description) 
+    VALUES ('Slovenia', 2016, '3', 'other', 'https://en.numista.com/catalogue/photos/slovenie/871-original.jpg',
+    32, 15, 'Nickel brass plated nickel center in copper-nickel ring', 'Reeded', 'Red Cross', 
+    'Source: https://en.numista.com/catalogue/pieces89298.html');
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, diameter, 
+mass, composition, edge, feature, coin_description) 
+    VALUES ('Lithuania', 2018, '1.5', 'other', 'https://en.numista.com/catalogue/photos/lituanie/860-original.jpg',
+    27.5, 11.1, 'Copper-nickel', 'Reeded', 'The 50th Physicists Day of Vilnius University, FiDi 50', 
+    'Source: https://en.numista.com/catalogue/pieces136669.html');
+*/
