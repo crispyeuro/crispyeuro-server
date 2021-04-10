@@ -1,15 +1,126 @@
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
+
+CREATE OR REPLACE FUNCTION logout(access_token TEXT)
+RETURNS VOID AS $$
+BEGIN
+    DELETE FROM user_session WHERE user_session.access_token = $1;
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION sign_up(username TEXT, password TEXT, email TEXT)
+RETURNS TABLE (access_token TEXT, expiration_date TIMESTAMP) AS $user_session$
+DECLARE
+    created_user_id INTEGER;
+BEGIN
+    IF NOT is_username_available($1) THEN
+        raise 'Signup error (username is already in use).';
+    END IF;
+    IF NOT is_username_available($3) THEN
+        raise 'Signup error (email is already in use).';
+    END IF;
+    PERFORM validate_password($2);
+    INSERT INTO user_account(username, password, email)
+    VALUES ($1, crypt($2, gen_salt('bf')), $3)
+    RETURNING user_account.user_id INTO created_user_id;
+    RETURN QUERY SELECT * FROM get_user_session(created_user_id);
+END;
+$user_session$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION is_username_available(username TEXT)
+RETURNS BOOLEAN AS $$
+BEGIN
+    RETURN NOT EXISTS(SELECT 1 FROM user_account WHERE user_account.username = $1);
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION is_email_available(email TEXT)
+RETURNS BOOLEAN AS $$
+BEGIN
+    RETURN NOT EXISTS(SELECT 1 FROM user_account WHERE user_account.email = $1);
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION validate_password(password TEXT)
+RETURNS VOID AS $$
+BEGIN
+    IF LENGTH($1) < 6 THEN
+        raise 'User password must contain at least six characters.';
+    END IF;
+    IF LENGTH($1) > 72 THEN
+        raise 'User password must contain no more than 72 characters.';
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+
+
+/* Returns a session ID if specified user exists and its password is correct */
+CREATE OR REPLACE FUNCTION login(username TEXT, password TEXT)
+RETURNS TABLE (access_token TEXT, expiration_date TIMESTAMP) AS $user_session$
+DECLARE
+    selected_user_id INTEGER;
+BEGIN
+    SELECT user_id 
+    FROM user_account
+    INTO selected_user_id
+    WHERE user_account.username = $1 AND user_account.password = crypt($2, user_account.password);
+    IF NOT found THEN
+        raise 'Authentication error (invalid username or password)';
+    END IF;
+    RETURN QUERY SELECT * FROM get_user_session(selected_user_id);
+END;
+$user_session$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION get_user_session(user_id INTEGER)
+RETURNS TABLE (access_token TEXT, expiration_date TIMESTAMP) AS $user_session$
+DECLARE
+    access_token TEXT;
+    expiration_date TIMESTAMP;
+BEGIN
+    SELECT user_session.access_token, user_session.expiration_date
+    FROM user_session
+    INTO access_token, expiration_date
+    WHERE user_session.user_id = $1;
+    IF NOT found THEN
+        INSERT INTO user_session (user_id) VALUES ($1)
+        RETURNING user_session.access_token, user_session.expiration_date INTO access_token, expiration_date;
+    END IF;
+    IF expiration_date <= now() THEN
+        UPDATE user_session
+        SET expiration_date = DEFAULT, access_token = DEFAULT
+        WHERE user_session.user_id = $1
+        RETURNING user_session.access_token, user_session.expiration_date INTO access_token, expiration_date;
+    END IF;
+    RETURN QUERY VALUES (access_token, expiration_date);
+END;
+$user_session$ LANGUAGE plpgsql;
+
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(200),
     username VARCHAR(20) UNIQUE NOT NULL,
-    password VARCHAR(200) NOT NULL,
+    password VARCHAR(60) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
     birthday DATE,
     gender VARCHAR(6) CHECK (gender IN ('male', 'female')),
     country VARCHAR(200),
     address VARCHAR(200),
     PRIMARY KEY(user_id)
+);
+
+CREATE TABLE IF NOT EXISTS user_session (
+    access_token TEXT NOT NULL DEFAULT gen_random_uuid(),
+    user_id INT NOT NULL,
+    expiration_date TIMESTAMP NOT NULL DEFAULT NOW() + INTERVAL '7 DAY',
+    PRIMARY KEY(access_token),
+    CONSTRAINT fk_user_id FOREIGN KEY(user_id) REFERENCES user_account(user_id)
 );
 
 /*User account status*/
