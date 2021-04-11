@@ -28,7 +28,6 @@ BEGIN
 END;
 $user_session$ LANGUAGE plpgsql;
 
-
 CREATE OR REPLACE FUNCTION is_username_available(username TEXT)
 RETURNS BOOLEAN AS $$
 BEGIN
@@ -100,6 +99,15 @@ BEGIN
 END;
 $user_session$ LANGUAGE plpgsql;
 
+CREATE OR REPLACE FUNCTION update_coin(access_token TEXT, coin_id INTEGER, grade TEXT, coin_value TEXT, amount INTEGER, design TEXT, in_set TEXT, comment TEXT)
+RETURNS VOID AS $$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+    UPDATE added_coin SET grade = $3, coin_value = $4, amount = $5, design = $6, in_set = $7 , comment = $8 WHERE added_coin.added_coin_id = $2;
+END;
+$$ LANGUAGE plpgsql;
 
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
@@ -9690,4 +9698,20 @@ mass, composition, edge, feature, coin_description)
     VALUES ('Lithuania', 2018, '1.5', 'other', 'https://en.numista.com/catalogue/photos/lituanie/860-original.jpg',
     27.5, 11.1, 'Copper-nickel', 'Reeded', 'The 50th Physicists Day of Vilnius University, FiDi 50', 
     'Source: https://en.numista.com/catalogue/pieces136669.html');
+*/
+/*Insert test data into 'added_coin' table*/
+/*INSERT INTO added_coin(user_id, coin_id, amount) VALUES (28, 1, 1);
+INSERT INTO added_coin(user_id, coin_id, amount) VALUES (28, 2, 1);
+INSERT INTO added_coin(user_id, coin_id, amount) VALUES (28, 3, 1);
+INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 4, 'UNC',1);
+INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 5, 'UNC', 1);
+INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 6, 'UNC', 1);
+INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 7, 'UNC', 1);
+INSERT INTO added_coin(user_id, coin_id, amount) VALUES (28, 8, 1);
+INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3931, 'UNC', 1);
+INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3948, 'UNC', 1);
+INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3705, 'UNC', 1);
+INSERT INTO added_coin(user_id, coin_id, amount) VALUES (28, 24, 1);
+INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3900, 'UNC', 1);
+INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3913, 'UNC', 1);
 */

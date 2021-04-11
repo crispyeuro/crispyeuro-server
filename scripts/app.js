@@ -166,6 +166,69 @@ app.get('/logout', function (serverRequest, serverResponse) {
     serverResponse.redirect('/static/login.html');
 });
 
+app.get('/api/layoutUsername', (serverRequest, serverResponse) => {
+    let access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT username FROM user_account INNER JOIN user_session ON user_account.user_id = user_session.user_id WHERE user_session.access_token = $1", [access_token], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.get('/api/layoutAddedCoins', (serverRequest, serverResponse) => {
+    let access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT Count(*) FROM added_coin INNER JOIN user_session ON user_session.user_id = added_coin.user_id WHERE user_session.access_token = $1;", [access_token], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.get('/api/coinsAmount', (serverRequest, serverResponse) => {
+    databaseClient.query("SELECT Count(*) FROM coin;", (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.get('/api/userAddedCoins', (serverRequest, serverResponse) => {
+    let access_token = serverRequest.cookies['access-token'];
+    const { coin_id } = serverRequest.query;
+    databaseClient.query("SELECT added_coin.added_coin_id, added_coin.grade, added_coin.coin_value, added_coin.amount, added_coin.design, added_coin.in_set, added_coin.image_path, added_coin.comment, added_coin.swap_availability FROM added_coin INNER JOIN user_session ON added_coin.user_id = user_session.user_id WHERE user_session.access_token = $1 AND added_coin.coin_id = $2;", [access_token, coin_id], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.post('/addCoin', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const coinId = serverRequest.body.coinId;
+    const grade = serverRequest.body.grade;
+    const value = serverRequest.body.value;
+    const amount = serverRequest.body.amount;
+    const design = serverRequest.body.design;
+    const inSet = serverRequest.body.inSet;
+    const comment = serverRequest.body.comment
+    databaseClient.query("SELECT update_coin($1, $2, $3, $4, $5, $6, $7, $8)", [access_token, coinId, grade, value, amount, design, inSet, comment], (error, databaseResponse) => {
+        if (error) {
+            console.log(error);
+        } else {
+            serverResponse.sendStatus(200);
+        }
+    });
+});
+
+
 process.on('exit', function () {
     databaseClient.end();
 });
