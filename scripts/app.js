@@ -166,6 +166,7 @@ app.get('/logout', function (serverRequest, serverResponse) {
     serverResponse.redirect('/static/login.html');
 });
 
+/*Get username*/
 app.get('/api/layoutUsername', (serverRequest, serverResponse) => {
     let access_token = serverRequest.cookies['access-token'];
     databaseClient.query("SELECT username FROM user_account INNER JOIN user_session ON user_account.user_id = user_session.user_id WHERE user_session.access_token = $1", [access_token], (error, databaseResponse) => {
@@ -177,6 +178,7 @@ app.get('/api/layoutUsername', (serverRequest, serverResponse) => {
     });
 });
 
+/*Get added coins*/
 app.get('/api/layoutAddedCoins', (serverRequest, serverResponse) => {
     let access_token = serverRequest.cookies['access-token'];
     databaseClient.query("SELECT Count(*) FROM added_coin INNER JOIN user_session ON user_session.user_id = added_coin.user_id WHERE user_session.access_token = $1;", [access_token], (error, databaseResponse) => {
@@ -188,6 +190,7 @@ app.get('/api/layoutAddedCoins', (serverRequest, serverResponse) => {
     });
 });
 
+/*Get coins amount*/
 app.get('/api/coinsAmount', (serverRequest, serverResponse) => {
     databaseClient.query("SELECT Count(*) FROM coin;", (error, databaseResponse) => {
         if (error) {
@@ -198,6 +201,7 @@ app.get('/api/coinsAmount', (serverRequest, serverResponse) => {
     });
 });
 
+/*Get added coins*/
 app.get('/api/userAddedCoins', (serverRequest, serverResponse) => {
     let access_token = serverRequest.cookies['access-token'];
     const { coin_id } = serverRequest.query;
@@ -210,6 +214,7 @@ app.get('/api/userAddedCoins', (serverRequest, serverResponse) => {
     });
 });
 
+/*Update added coin*/
 app.post('/addCoin', (serverRequest, serverResponse) => {
     const access_token = serverRequest.cookies['access-token'];
     const coinId = serverRequest.body.coinId;
@@ -227,7 +232,6 @@ app.post('/addCoin', (serverRequest, serverResponse) => {
         }
     });
 });
-
 
 process.on('exit', function () {
     databaseClient.end();

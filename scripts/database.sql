@@ -99,6 +99,7 @@ BEGIN
 END;
 $user_session$ LANGUAGE plpgsql;
 
+/*Update added coin*/
 CREATE OR REPLACE FUNCTION update_coin(access_token TEXT, coin_id INTEGER, grade TEXT, coin_value TEXT, amount INTEGER, design TEXT, in_set TEXT, comment TEXT)
 RETURNS VOID AS $$
 DECLARE
