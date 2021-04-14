@@ -235,6 +235,17 @@ app.post('/addCoin', (serverRequest, serverResponse) => {
     });
 });
 
+app.post('/deleteAddedCoin', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const addedCoinId = serverRequest.body.addedCoinIdToDeleteId;
+    databaseClient.query("SELECT delete_coin($1, $2)", [access_token, addedCoinId], (error, databaseResponse) => {
+        if (error) {
+            console.log(error);
+        } else {
+            serverResponse.sendStatus(200);
+        }
+    });
+});
 
 process.on('exit', function () {
     databaseClient.end();

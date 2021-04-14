@@ -115,6 +115,16 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/*Delete added coin*/
+CREATE OR REPLACE FUNCTION delete_coin(access_token TEXT, coin_id INTEGER)
+RETURNS VOID AS $$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+    DELETE FROM added_coin WHERE added_coin.user_id = added_coin_user_id AND added_coin.added_coin_id = $2;
+END;
+$$ LANGUAGE plpgsql;
 
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
