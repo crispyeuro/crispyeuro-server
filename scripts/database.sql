@@ -99,16 +99,22 @@ BEGIN
 END;
 $user_session$ LANGUAGE plpgsql;
 
-/*Update added coin*/
-CREATE OR REPLACE FUNCTION update_coin(access_token TEXT, coin_id INTEGER, grade TEXT, coin_value TEXT, amount INTEGER, design TEXT, in_set TEXT, comment TEXT)
+/*Insert new coin or update existing coin*/
+CREATE OR REPLACE FUNCTION update_coin(access_token TEXT, coin INTEGER, coin_id INTEGER, grade TEXT, coin_value TEXT, amount INTEGER, design TEXT, in_set TEXT, comment TEXT, picturePath TEXT)
 RETURNS VOID AS $$
 DECLARE
     added_coin_user_id INTEGER;
 BEGIN
     SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
-    UPDATE added_coin SET grade = $3, coin_value = $4, amount = $5, design = $6, in_set = $7 , comment = $8 WHERE added_coin.added_coin_id = $2;
+    IF $3 = 0 THEN
+        INSERT INTO added_coin (coin_id, user_id, grade, coin_value, amount, design, in_set, image_path, comment) 
+        VALUES ($2, added_coin_user_id, $4, $5, $6, $7, $8, $10, $9);
+    ELSE 
+        UPDATE added_coin SET grade = $4, coin_value = $5, amount = $6, design = $7, in_set = $8 , comment = $9, image_path = $10 WHERE added_coin.added_coin_id = $3;
+    END IF;
 END;
 $$ LANGUAGE plpgsql;
+
 
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (

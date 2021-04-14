@@ -218,13 +218,15 @@ app.get('/api/userAddedCoins', (serverRequest, serverResponse) => {
 app.post('/addCoin', (serverRequest, serverResponse) => {
     const access_token = serverRequest.cookies['access-token'];
     const coinId = serverRequest.body.coinId;
+    const addedCoinId = serverRequest.body.addedCoinId;
     const grade = serverRequest.body.grade;
     const value = serverRequest.body.value;
     const amount = serverRequest.body.amount;
     const design = serverRequest.body.design;
     const inSet = serverRequest.body.inSet;
-    const comment = serverRequest.body.comment
-    databaseClient.query("SELECT update_coin($1, $2, $3, $4, $5, $6, $7, $8)", [access_token, coinId, grade, value, amount, design, inSet, comment], (error, databaseResponse) => {
+    const comment = serverRequest.body.comment;
+    const picturePath = serverRequest.body.picturePath;
+    databaseClient.query("SELECT update_coin($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)", [access_token, coinId, addedCoinId, grade, value, amount, design, inSet, comment, picturePath], (error, databaseResponse) => {
         if (error) {
             console.log(error);
         } else {
@@ -232,6 +234,7 @@ app.post('/addCoin', (serverRequest, serverResponse) => {
         }
     });
 });
+
 
 process.on('exit', function () {
     databaseClient.end();
