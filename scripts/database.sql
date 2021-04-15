@@ -126,6 +126,21 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/*Insert true or false into added_coin.awap_availability*/
+CREATE OR REPLACE FUNCTION coin_swap_available(access_token TEXT, coin_id INTEGER, swap_checkbox_value TEXT)
+RETURNS VOID AS $$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+    IF $3 = 'addedCoinAvailable' THEN
+        UPDATE added_coin SET swap_availability = true WHERE added_coin.user_id = added_coin_user_id AND added_coin.added_coin_id = $2;
+    ELSE
+        UPDATE added_coin SET swap_availability = false WHERE added_coin.user_id = added_coin_user_id AND added_coin.added_coin_id = $2;
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,

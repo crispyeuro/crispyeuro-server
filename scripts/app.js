@@ -205,7 +205,7 @@ app.get('/api/coinsAmount', (serverRequest, serverResponse) => {
 app.get('/api/userAddedCoins', (serverRequest, serverResponse) => {
     let access_token = serverRequest.cookies['access-token'];
     const { coin_id } = serverRequest.query;
-    databaseClient.query("SELECT added_coin.added_coin_id, added_coin.grade, added_coin.coin_value, added_coin.amount, added_coin.design, added_coin.in_set, added_coin.image_path, added_coin.comment, added_coin.swap_availability FROM added_coin INNER JOIN user_session ON added_coin.user_id = user_session.user_id WHERE user_session.access_token = $1 AND added_coin.coin_id = $2;", [access_token, coin_id], (error, databaseResponse) => {
+    databaseClient.query("SELECT added_coin.added_coin_id, added_coin.grade, added_coin.coin_value, added_coin.amount, added_coin.design, added_coin.in_set, added_coin.image_path, added_coin.comment, added_coin.swap_availability FROM added_coin INNER JOIN user_session ON added_coin.user_id = user_session.user_id WHERE user_session.access_token = $1 AND added_coin.coin_id = $2 ORDER BY added_coin.added_coin_id DESC;", [access_token, coin_id], (error, databaseResponse) => {
         if (error) {
             console.log(error.stack);
         } else {
@@ -239,6 +239,19 @@ app.post('/deleteAddedCoin', (serverRequest, serverResponse) => {
     const access_token = serverRequest.cookies['access-token'];
     const addedCoinId = serverRequest.body.addedCoinIdToDeleteId;
     databaseClient.query("SELECT delete_coin($1, $2)", [access_token, addedCoinId], (error, databaseResponse) => {
+        if (error) {
+            console.log(error);
+        } else {
+            serverResponse.sendStatus(200);
+        }
+    });
+});
+
+app.post('/checkboxAddedCoin', (serverRequest, serverResponse) => {
+    const accessToken = serverRequest.cookies['access-token'];
+    const addedCoinId = serverRequest.body.addedCoinToSwapId;
+    const swapCheckboxValue = serverRequest.body.userCoinSwapAvailable;
+    databaseClient.query("SELECT coin_swap_available($1, $2, $3)", [accessToken, addedCoinId, swapCheckboxValue], (error, databaseResponse) => {
         if (error) {
             console.log(error);
         } else {
