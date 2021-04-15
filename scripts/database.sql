@@ -141,6 +141,34 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/*Get a table for 'Countrycard' according to user access-token*/
+CREATE OR REPLACE FUNCTION get_countrycard_table(access_token TEXT, coin_country TEXT)
+RETURNS TABLE (coin_id INT, coin_id_added INT, country VARCHAR, issue_year INT, denomination DECIMAL, coin_type VARCHAR, feature VARCHAR, mintage_total INT) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    CREATE TEMP TABLE IF NOT EXISTS temp_coin_table AS
+    SELECT coin.coin_id, coin.country, coin.issue_year, coin.denomination, coin.coin_type, coin.feature, coin_mintage.mintage_total 
+    FROM coin 
+    LEFT OUTER JOIN coin_mintage 
+    ON coin.coin_id = coin_mintage.coin_id 
+    WHERE coin.country 
+    LIKE ($2 || '%');
+
+    RETURN QUERY
+    SELECT DISTINCT temp_coin_table.coin_id, added_coin.coin_id AS coin_id_added, temp_coin_table.country, temp_coin_table.issue_year, temp_coin_table.denomination, temp_coin_table.coin_type, temp_coin_table.feature, temp_coin_table.mintage_total  
+    FROM temp_coin_table 
+    LEFT JOIN added_coin 
+    ON temp_coin_table.coin_id = added_coin.coin_id 
+    AND added_coin.user_id = added_coin_user_id
+    ORDER BY temp_coin_table.issue_year ASC;
+
+    DROP TABLE temp_coin_table;
+END;
+$coins$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,

@@ -87,7 +87,8 @@ app.get('/api/commemorativeCountryRequest', (serverRequest, serverResponse) => {
 
 app.get('/api/countryRequest', (serverRequest, serverResponse) => {
     const { country } = serverRequest.query;
-    databaseClient.query('SELECT coin.*, coin_mintage.coin_mintage_id, coin_mintage.mintage_total, coin_mintage.uncirculated, coin_mintage.brilliant_uncirculated, coin_mintage.proof, coin_mintage.mintmark, coin_mintage.mint, coin_mintage.issue_date, coin_mintage.mintage_description FROM coin LEFT OUTER JOIN coin_mintage ON coin.coin_id = coin_mintage.coin_id WHERE country LIKE $1 ORDER BY coin.issue_year ASC;', [country + '%'], (err, databaseResponse) => {
+    const accessToken = serverRequest.cookies['access-token'];
+    databaseClient.query('SELECT * FROM get_countrycard_table($1, $2)', [accessToken, country], (err, databaseResponse) => {
         if (err) {
             console.log(err.stack);
         } else {
@@ -181,7 +182,7 @@ app.get('/api/layoutUsername', (serverRequest, serverResponse) => {
 /*Get added coins*/
 app.get('/api/layoutAddedCoins', (serverRequest, serverResponse) => {
     let access_token = serverRequest.cookies['access-token'];
-    databaseClient.query("SELECT Count(*) FROM added_coin INNER JOIN user_session ON user_session.user_id = added_coin.user_id WHERE user_session.access_token = $1;", [access_token], (error, databaseResponse) => {
+    databaseClient.query("SELECT Count(DISTINCT added_coin.coin_id) FROM added_coin INNER JOIN user_session ON user_session.user_id = added_coin.user_id WHERE user_session.access_token = $1;", [access_token], (error, databaseResponse) => {
         if (error) {
             console.log(error.stack);
         } else {
