@@ -169,6 +169,82 @@ BEGIN
 END;
 $coins$ LANGUAGE plpgsql;
 
+/*Get a table for 'Denominationcard' according to user access-token*/
+CREATE OR REPLACE FUNCTION get_denominationcard_table(access_token TEXT, coin_denomination DECIMAL)
+RETURNS TABLE (coin_id INT, coin_id_added INT, country VARCHAR, issue_year INT, denomination DECIMAL, coin_type VARCHAR) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    CREATE TEMP TABLE IF NOT EXISTS temp_coin_table AS
+    SELECT coin.coin_id, coin.country, coin.issue_year, coin.denomination, coin.coin_type 
+    FROM coin 
+    WHERE coin.denomination = $2;
+
+    RETURN QUERY
+    SELECT DISTINCT temp_coin_table.coin_id, added_coin.coin_id AS coin_id_added, temp_coin_table.country, temp_coin_table.issue_year, temp_coin_table.denomination, temp_coin_table.coin_type  
+    FROM temp_coin_table 
+    LEFT JOIN added_coin 
+    ON temp_coin_table.coin_id = added_coin.coin_id 
+    AND added_coin.user_id = added_coin_user_id
+    ORDER BY temp_coin_table.country, temp_coin_table.issue_year ASC;
+
+    DROP TABLE temp_coin_table;
+END;
+$coins$ LANGUAGE plpgsql;
+
+/*Get a table ordered by years for 'Commemorativecard' according to user access-token*/
+CREATE OR REPLACE FUNCTION get_commemorative_by_year_table(access_token TEXT, coin_issue_year INTEGER, coin_type_commemorative VARCHAR)
+RETURNS TABLE (coin_id INT, coin_id_added INT, country VARCHAR, issue_year INT, coin_type VARCHAR, obverse_image_path VARCHAR, feature VARCHAR) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    CREATE TEMP TABLE IF NOT EXISTS temp_coin_table AS
+    SELECT coin.coin_id, coin.country, coin.issue_year, coin.coin_type, coin.obverse_image_path, coin.feature  
+    FROM coin 
+    WHERE coin.issue_year = $2 AND coin.coin_type = $3;
+
+    RETURN QUERY
+    SELECT DISTINCT temp_coin_table.coin_id, added_coin.coin_id AS coin_id_added, temp_coin_table.country, temp_coin_table.issue_year, temp_coin_table.coin_type, temp_coin_table.obverse_image_path, temp_coin_table.feature   
+    FROM temp_coin_table 
+    LEFT JOIN added_coin 
+    ON temp_coin_table.coin_id = added_coin.coin_id 
+    AND added_coin.user_id = added_coin_user_id
+    ORDER BY temp_coin_table.country ASC;
+
+    DROP TABLE temp_coin_table;
+END;
+$coins$ LANGUAGE plpgsql;
+
+/*Get a table ordered by countries for 'Commemorativecard' according to user access-token*/
+CREATE OR REPLACE FUNCTION get_commemorative_by_country_table(access_token TEXT, coin_country VARCHAR, coin_type_commemorative VARCHAR, coin_type_common VARCHAR)
+RETURNS TABLE (coin_id INT, coin_id_added INT, country VARCHAR, issue_year INT, coin_type VARCHAR, obverse_image_path VARCHAR, feature VARCHAR) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    CREATE TEMP TABLE IF NOT EXISTS temp_coin_table AS
+    SELECT coin.coin_id, coin.country, coin.issue_year, coin.coin_type, coin.obverse_image_path, coin.feature 
+    FROM coin 
+    WHERE coin.country = $2 AND coin.coin_type = $3 
+    OR coin.country = $2 AND coin.coin_type = $4;
+
+    RETURN QUERY
+    SELECT DISTINCT temp_coin_table.coin_id, added_coin.coin_id AS coin_id_added, temp_coin_table.country, temp_coin_table.issue_year, temp_coin_table.coin_type, temp_coin_table.obverse_image_path, temp_coin_table.feature   
+    FROM temp_coin_table 
+    LEFT JOIN added_coin 
+    ON temp_coin_table.coin_id = added_coin.coin_id 
+    AND added_coin.user_id = added_coin_user_id
+    ORDER BY temp_coin_table.issue_year ASC;
+
+    DROP TABLE temp_coin_table;
+END;
+$coins$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,

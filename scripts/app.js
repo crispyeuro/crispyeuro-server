@@ -65,8 +65,9 @@ app.get('/api/lala', (serverRequest, serverResponse) => {
 app.get('/api/commemorativeCountryRequest', (serverRequest, serverResponse) => {
     const { issue_year = null, country = null, coin_type = null } = serverRequest.query;
     let coin_type_common = "commemorative_common";
+    const accessToken = serverRequest.cookies['access-token'];
     if (issue_year === null && country !== null && coin_type !== null) {
-        databaseClient.query('SELECT * FROM coin WHERE country = $1 AND coin_type = $2 OR country = $1 AND coin_type = $3 ORDER BY issue_year ASC;', [country, coin_type, coin_type_common], (err, databaseResponse) => {
+        databaseClient.query('SELECT * FROM get_commemorative_by_country_table($1, $2, $3, $4)', [accessToken, country, coin_type, coin_type_common], (err, databaseResponse) => {
             if (err) {
                 console.log(err.stack);
             } else {
@@ -75,7 +76,7 @@ app.get('/api/commemorativeCountryRequest', (serverRequest, serverResponse) => {
         });
     }
     if (country === null && issue_year !== null && coin_type !== null) {
-        databaseClient.query('SELECT * FROM coin WHERE issue_year = $1 AND coin_type = $2 OR issue_year = $1 AND coin_type = $3 ORDER BY country ASC;', [issue_year, coin_type, coin_type_common], (err, databaseResponse) => {
+        databaseClient.query('SELECT * FROM get_commemorative_by_year_table($1, $2, $3)', [accessToken, issue_year, coin_type], (err, databaseResponse) => {
             if (err) {
                 console.log(err.stack);
             } else {
@@ -99,7 +100,8 @@ app.get('/api/countryRequest', (serverRequest, serverResponse) => {
 
 app.get('/api/denominationRequest', (serverRequest, serverResponse) => {
     const { denomination } = serverRequest.query;
-    databaseClient.query('SELECT * FROM coin WHERE denomination = $1 ORDER BY coin.country, coin.issue_year ASC;', [denomination], (err, databaseResponse) => {
+    const accessToken = serverRequest.cookies['access-token'];
+    databaseClient.query('SELECT * FROM get_denominationcard_table($1, $2)', [accessToken,  denomination], (err, databaseResponse) => {
         if (err) {
             console.log(err.stack);
         } else {
