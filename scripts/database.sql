@@ -245,6 +245,39 @@ BEGIN
 END;
 $coins$ LANGUAGE plpgsql;
 
+/*Get a table of added coins to swap for 'Swap' tab according to user access-token*/
+CREATE OR REPLACE FUNCTION get_user_coins_to_swap(access_token TEXT)
+RETURNS TABLE (coin_id INT, coin_id_added INT, coin_type VARCHAR, country VARCHAR, issue_year INT, denomination DECIMAL, swap_availability BOOLEAN) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    RETURN QUERY
+    SELECT coin.coin_id, added_coin.added_coin_id AS coin_id_added, coin.coin_type, coin.country, coin.issue_year, coin.denomination, added_coin.swap_availability 
+    FROM coin 
+    LEFT JOIN added_coin 
+    ON coin.coin_id = added_coin.coin_id 
+    WHERE added_coin.swap_availability = true
+    AND added_coin.user_id = added_coin_user_id;
+END;
+$coins$ LANGUAGE plpgsql;
+
+/*Change 'swap_availability' value to 'false' in a 'added_coin' table*/
+CREATE OR REPLACE FUNCTION change_coin_to_swap_list(access_token TEXT, coin_id INTEGER)
+RETURNS VOID AS $$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+    
+    UPDATE added_coin 
+    SET swap_availability = false 
+    WHERE user_id = added_coin_user_id 
+    AND added_coin_id = $2;
+END;
+$$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,

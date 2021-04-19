@@ -263,6 +263,31 @@ app.post('/checkboxAddedCoin', (serverRequest, serverResponse) => {
     });
 });
 
+/*Get added coins to swap*/
+app.get('/api/userCoinsToSwapRequest', (serverRequest, serverResponse) => {
+    let access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT * FROM get_user_coins_to_swap($1)", [access_token], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+/*Delete added coin from swap availability list*/
+app.post('/deleteUserCoinToSwap', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const addedCoinId = serverRequest.body.addedCoinToSwapId;
+    databaseClient.query("SELECT change_coin_to_swap_list($1, $2)", [access_token, addedCoinId], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });
