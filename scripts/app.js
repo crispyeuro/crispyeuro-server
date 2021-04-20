@@ -288,6 +288,62 @@ app.post('/deleteUserCoinToSwap', (serverRequest, serverResponse) => {
     });
 });
 
+/*Add wanted coin*/
+app.post('/addWantedCoin', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const coinId = serverRequest.body.wantThisCoinId;
+    console.log(coinId);
+    databaseClient.query("SELECT add_to_wanted_coin_table($1, $2);", [access_token, coinId], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+/*Change wanted coin*/
+app.post('/changeWantedCoin', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const coinId = serverRequest.body.wantThisCoinId;
+    const grade = serverRequest.body.grade;
+    const amount = serverRequest.body.amount;
+    const design = serverRequest.body.design;
+    const inSet = serverRequest.body.inSet;
+    const comment = serverRequest.body.comment;
+    databaseClient.query("SELECT change_wanted_coin($1, $2, $3, $4, $5, $6, $7);", [access_token, coinId, grade, amount, design, inSet, comment], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.get('/api/userWantedCoin$', (serverRequest, serverResponse) => {
+    const { coin_id } = serverRequest.query;
+    let access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT * FROM get_user_wanted_coin($1, $2)", [access_token, coin_id], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.post('/deleteWantedCoin', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const wantedCoinId = serverRequest.body.wantedCoinId;
+    databaseClient.query("SELECT delete_wanted_coin($1, $2);", [access_token, wantedCoinId], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });

@@ -278,6 +278,76 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/*Insert wanted coin into 'wanted_coin' if not found*/
+CREATE OR REPLACE FUNCTION add_to_wanted_coin_table(access_token TEXT, coin_id INTEGER)
+RETURNS VOID AS $$
+DECLARE
+    coin_user_id INTEGER;
+    wanted_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO coin_user_id WHERE user_session.access_token = $1;
+    
+    SELECT user_id
+    FROM wanted_coin
+    INTO wanted_coin_user_id
+    WHERE wanted_coin.user_id = coin_user_id
+    AND wanted_coin.coin_id = $2;
+
+    IF NOT found THEN
+    INSERT INTO wanted_coin (coin_id, user_id) VALUES ($2, coin_user_id);
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+
+/*Change wanted coin*/
+CREATE OR REPLACE FUNCTION change_wanted_coin(access_token TEXT, user_coin_id INTEGER, coin_grade VARCHAR, coin_amount INTEGER, coin_design VARCHAR, coin_inSet VARCHAR, coin_comment VARCHAR)
+RETURNS VOID AS $$
+DECLARE
+    coin_user_id INTEGER;
+    wanted_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO coin_user_id WHERE user_session.access_token = $1;
+    
+    SELECT user_id
+    FROM wanted_coin
+    INTO wanted_coin_user_id
+    WHERE wanted_coin.user_id = coin_user_id;
+
+    IF found THEN
+    UPDATE wanted_coin 
+    SET grade = $3, amount = $4, design = $5, in_set = $6, comment = $7 
+    WHERE wanted_coin.user_id = coin_user_id AND wanted_coin.coin_id = $2;
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+
+/*Get wanted coin according to user access-token*/
+CREATE OR REPLACE FUNCTION get_user_wanted_coin(access_token TEXT, user_coin_id INTEGER)
+RETURNS TABLE (coin_id INT, wanted_coin_id INT, grade VARCHAR, amount INT, design VARCHAR, in_set VARCHAR, comment VARCHAR) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    RETURN QUERY 
+    SELECT wanted_coin.coin_id, wanted_coin.wanted_coin_id, wanted_coin.grade, wanted_coin.amount, wanted_coin.design, wanted_coin.in_set, wanted_coin.comment 
+    FROM wanted_coin
+    WHERE wanted_coin.user_id = added_coin_user_id 
+    AND wanted_coin.coin_id = $2;
+END;
+$coins$ LANGUAGE plpgsql;
+
+/*Delete wanted coin*/
+CREATE OR REPLACE FUNCTION delete_wanted_coin(access_token TEXT, user_wanted_coin_id INTEGER)
+RETURNS VOID AS $$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+    DELETE FROM wanted_coin WHERE wanted_coin.user_id = added_coin_user_id AND wanted_coin.wanted_coin_id = $2;
+END;
+$$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
