@@ -344,6 +344,18 @@ app.post('/deleteWantedCoin', (serverRequest, serverResponse) => {
     });
 });
 
+app.get('/api/coincardSwapWantedCoins$', (serverRequest, serverResponse) => {
+    const { coin_id } = serverRequest.query;
+    let access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT * FROM get_coincard_swap_wanted_coins($1, $2)", [access_token, coin_id], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });

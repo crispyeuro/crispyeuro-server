@@ -348,6 +348,30 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/*Get wanted coins to swap for a coincard*/
+CREATE OR REPLACE FUNCTION get_coincard_swap_wanted_coins(access_token TEXT, user_coin_id INTEGER)
+RETURNS TABLE (coin_id INT, wanted_coin_id INT, username VARCHAR, grade VARCHAR, amount INT, design VARCHAR, in_set VARCHAR, comment VARCHAR) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    CREATE TEMP TABLE IF NOT EXISTS temp_table AS
+    SELECT user_account.user_id, user_account.username 
+    FROM user_account;
+
+    RETURN QUERY
+    SELECT wanted_coin.coin_id, wanted_coin.wanted_coin_id, temp_table.username, wanted_coin.grade, wanted_coin.amount, wanted_coin.design, wanted_coin.in_set, wanted_coin.comment    
+    FROM wanted_coin 
+    LEFT JOIN temp_table 
+    ON wanted_coin.user_id = temp_table.user_id 
+    WHERE wanted_coin.coin_id = $2 
+    AND wanted_coin.user_id <> added_coin_user_id;
+
+    DROP TABLE temp_table;
+END;
+$coins$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
