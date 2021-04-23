@@ -246,6 +246,26 @@ END;
 $coins$ LANGUAGE plpgsql;
 
 /*Get a table of added coins to swap for 'Swap' tab according to user access-token*/
+CREATE OR REPLACE FUNCTION get_user_added_coins_for_coincard(access_token TEXT, user_coin_id INT)
+RETURNS TABLE (country VARCHAR, issue_year INT, denomination DECIMAL, coin_type VARCHAR, coin_id INT, added_coin_id INT, grade VARCHAR, coin_value VARCHAR, amount INT, design VARCHAR, in_set VARCHAR, image_path VARCHAR, comment VARCHAR, swap_availability BOOLEAN) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    RETURN QUERY
+    SELECT coin.country, coin.issue_year, coin.denomination, coin.coin_type, added_coin.coin_id, added_coin.added_coin_id, added_coin.grade, added_coin.coin_value, added_coin.amount, added_coin.design, added_coin.in_set, added_coin.image_path, added_coin.comment, added_coin.swap_availability 
+    FROM added_coin 
+    LEFT JOIN coin
+    ON added_coin.coin_id = coin.coin_id 
+    WHERE added_coin.user_id = added_coin_user_id 
+    AND added_coin.coin_id = $2 
+    ORDER BY added_coin.added_coin_id DESC;
+END;
+$coins$ LANGUAGE plpgsql;
+
+
+/*Get a table of added coins to swap for 'Swap' tab according to user access-token*/
 CREATE OR REPLACE FUNCTION get_user_coins_to_swap(access_token TEXT)
 RETURNS TABLE (coin_id INT, coin_id_added INT, coin_type VARCHAR, country VARCHAR, issue_year INT, denomination DECIMAL, swap_availability BOOLEAN) AS $coins$
 DECLARE
@@ -371,6 +391,47 @@ BEGIN
     DROP TABLE temp_table;
 END;
 $coins$ LANGUAGE plpgsql;
+
+/*Get other user coins to swap*/
+CREATE OR REPLACE FUNCTION getOtherUserCoinsToSwap(user_coin_id INTEGER)
+RETURNS TABLE (country VARCHAR, issue_year INT, denomination DECIMAL, coin_type VARCHAR, coin_id INT, added_coin_id INT, grade VARCHAR, amount INT, design VARCHAR, in_set VARCHAR, image_path VARCHAR) AS $coins$ 
+DECLARE
+    other_user_id INTEGER;
+BEGIN
+    SELECT wanted_coin.user_id 
+    FROM wanted_coin
+    INTO other_user_id
+    WHERE wanted_coin.wanted_coin_id = $1;
+
+    CREATE TEMP TABLE IF NOT EXISTS temp_table AS
+    SELECT added_coin.coin_id, added_coin.added_coin_id, added_coin.grade, added_coin.amount, added_coin.design, added_coin.in_set, added_coin.image_path     
+    FROM added_coin 
+    WHERE added_coin.swap_availability = true
+    AND added_coin.user_id = other_user_id;
+
+    RETURN QUERY
+    SELECT coin.country, coin.issue_year, coin.denomination, coin.coin_type, temp_table.* 
+    FROM temp_table
+    LEFT JOIN coin
+    ON temp_table.coin_id = coin.coin_id;
+
+    DROP TABLE temp_table;
+END;
+$coins$ LANGUAGE plpgsql;
+
+/*Send an offer to a user*/
+CREATE OR REPLACE FUNCTION insert_coin_offer(access_token TEXT, coinsToOffer INTEGER[], coinsToGet INTEGER[], comment VARCHAR, otherUsername VARCHAR)
+RETURNS VOID AS $$
+DECLARE
+    sender_user_id INTEGER;
+    receiver_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO sender_user_id WHERE user_session.access_token = $1;
+    SELECT user_account.user_id FROM user_account INTO receiver_user_id WHERE user_account.username = $5;
+
+    INSERT INTO swap_request (sender_id, receiver_id, sender_coins, receiver_coins, comment) VALUES (sender_user_id, receiver_user_id, $2, $3, $4);
+END;
+$$ LANGUAGE plpgsql;
 
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
@@ -519,15 +580,15 @@ CREATE TABLE IF NOT EXISTS user_message (
     CONSTRAINT fk_user_id FOREIGN KEY(sender_id) REFERENCES user_account(user_id)
 );
 
-/*"Swap request" table. sender_offered_coins accepts coins' id from sender's "added coins" table*/
-/*receiver_coin accepts user's coin id from 'added coins'*/
+/*"Swap request" table. sender_coins accepts coins' id from sender "added coins" table*/
+/*receiver_coisn accepts user's coins' id from 'added coins'*/
 CREATE TABLE IF NOT EXISTS swap_request (
     swap_request_id INT GENERATED ALWAYS AS IDENTITY,
-    sender_id INT,
-    receiver_id INT,
-    sender_offered_coins INTEGER[],
-    receiver_coin INT,
-    created TIMESTAMP,
+    sender_id INT NOT NULL,
+    receiver_id INT NOT NULL,
+    sender_coins INTEGER[],
+    receiver_coins INTEGER[],
+    created_date TIMESTAMP NOT NULL DEFAULT NOW(),
     comment VARCHAR(2000),
     archived BOOLEAN,
     PRIMARY KEY(swap_request_id),
