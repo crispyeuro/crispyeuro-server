@@ -402,6 +402,62 @@ function getAnArray(object) {
     return coinIdArray;
 }
 
+app.get('/api/coincardSwapOfferedCoins$', (serverRequest, serverResponse) => {
+    const { coin_id } = serverRequest.query;
+    let access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT * FROM get_coincard_swap_offered_coins($1, $2)", [access_token, coin_id], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.get('/api/getOtherUserWantedCoins', (serverRequest, serverResponse) => {
+    const { added_coin_id } = serverRequest.query;
+    databaseClient.query("SELECT * FROM get_other_user_wanted_coins($1);", [added_coin_id], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.get('/api/getCoinsToSwap', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT * FROM get_coincard_coins_to_swap($1);", [access_token], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.post('/sendUserRequest', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+
+    let coinToGetId = serverRequest.body.offeredCoinId;
+
+    let coinToGet = serverRequest.body.offeredCoinId;
+    coinToGet = getAnArray(coinToGet);
+
+    let coinsToOffer = serverRequest.body.coinsToGet;
+    coinsToOffer = getAnArray(coinsToOffer);
+
+    const comment = serverRequest.body.comment;
+
+    databaseClient.query("SELECT insert_coin_request($1, $2, $3, $4, $5);", [access_token, coinToGetId, coinToGet, coinsToOffer, comment], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });

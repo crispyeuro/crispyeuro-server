@@ -433,6 +433,90 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/*Get offered coins to swap for a coincard*/
+CREATE OR REPLACE FUNCTION get_coincard_swap_offered_coins(access_token TEXT, coincard_coin_id INTEGER)
+RETURNS TABLE (coin_id INT, added_coin_id INT, username VARCHAR, grade VARCHAR, coin_value VARCHAR, amount INT, design VARCHAR, in_set VARCHAR, image_path VARCHAR, comment VARCHAR) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    CREATE TEMP TABLE IF NOT EXISTS temp_table AS
+    SELECT user_account.user_id, user_account.username 
+    FROM user_account;
+
+    RETURN QUERY
+    SELECT added_coin.coin_id, added_coin.added_coin_id, temp_table.username, added_coin.grade, added_coin.coin_value, added_coin.amount, added_coin.design, added_coin.in_set, added_coin.image_path, added_coin.comment    
+    FROM added_coin 
+    LEFT JOIN temp_table 
+    ON added_coin.user_id = temp_table.user_id 
+    WHERE added_coin.coin_id = $2 
+    AND added_coin.user_id <> added_coin_user_id
+    AND added_coin.swap_availability = true;
+
+    DROP TABLE temp_table;
+END;
+$coins$ LANGUAGE plpgsql;
+
+/*Get other user wanted coins*/
+CREATE OR REPLACE FUNCTION get_other_user_wanted_coins(user_coin_id INTEGER)
+RETURNS TABLE (country VARCHAR, issue_year INT, denomination DECIMAL, coin_type VARCHAR, coin_id INT, wanted_coin_id INT, grade VARCHAR, amount INT, design VARCHAR, in_set VARCHAR) AS $coins$ 
+DECLARE
+    other_user_id INTEGER;
+BEGIN
+    SELECT added_coin.user_id 
+    FROM added_coin
+    INTO other_user_id
+    WHERE added_coin.added_coin_id = $1;
+
+    CREATE TEMP TABLE IF NOT EXISTS temp_table AS
+    SELECT wanted_coin.coin_id, wanted_coin.wanted_coin_id, wanted_coin.grade, wanted_coin.amount, wanted_coin.design, wanted_coin.in_set      
+    FROM wanted_coin 
+    WHERE wanted_coin.user_id = other_user_id;
+
+    RETURN QUERY
+    SELECT coin.country, coin.issue_year, coin.denomination, coin.coin_type, temp_table.* 
+    FROM temp_table
+    LEFT JOIN coin
+    ON temp_table.coin_id = coin.coin_id;
+
+    DROP TABLE temp_table;
+END;
+$coins$ LANGUAGE plpgsql;
+
+/*Get all user coins to swap for a coincard*/
+CREATE OR REPLACE FUNCTION get_coincard_coins_to_swap(access_token TEXT)
+RETURNS TABLE (country VARCHAR, issue_year INT, coin_type VARCHAR, denomination DECIMAL, coin_id INT, added_coin_id INT, grade VARCHAR, coin_value VARCHAR, amount INT, design VARCHAR, in_set VARCHAR, image_path VARCHAR, comment VARCHAR) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    RETURN QUERY
+    SELECT coin.country, coin.issue_year, coin.coin_type, coin.denomination, added_coin.coin_id, added_coin.added_coin_id, added_coin.grade, added_coin.coin_value, added_coin.amount, added_coin.design, added_coin.in_set, added_coin.image_path, added_coin.comment    
+    FROM added_coin 
+    LEFT JOIN coin
+    ON added_coin.coin_id = coin.coin_id
+    WHERE added_coin.user_id = added_coin_user_id
+    AND added_coin.swap_availability = true;
+END;
+$coins$ LANGUAGE plpgsql;
+
+/*Send a request to a user*/
+CREATE OR REPLACE FUNCTION insert_coin_request(access_token TEXT, coin_to_get_id INT, coin_to_get INTEGER[], coins_to_offer INTEGER[], comment VARCHAR)
+RETURNS VOID AS $$
+DECLARE
+    sender_user_id INTEGER;
+    receiver_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO sender_user_id WHERE user_session.access_token = $1;
+    SELECT added_coin.user_id FROM added_coin INTO receiver_user_id WHERE added_coin.added_coin_id = $2;
+
+    INSERT INTO swap_request (sender_id, receiver_id, sender_coins, receiver_coins, comment) 
+    VALUES (sender_user_id, receiver_user_id, $4, $3, $5);
+END;
+$$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
