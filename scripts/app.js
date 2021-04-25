@@ -458,6 +458,28 @@ app.post('/sendUserRequest', (serverRequest, serverResponse) => {
     });
 });
 
+app.get('/api/getSentSwapRequests', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT * FROM get_sent_swap_requests($1);", [access_token], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.get('/api/getSwapAddedCoin', (serverRequest, serverResponse) => {
+    const { added_coin_id } = serverRequest.query;
+    databaseClient.query("SELECT * FROM get_swap_added_coin($1);", [added_coin_id], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });
