@@ -550,6 +550,24 @@ BEGIN
 END;
 $coins$ LANGUAGE plpgsql;
 
+/*Get received swap requests*/
+CREATE OR REPLACE FUNCTION get_received_swap_requests(access_token TEXT)
+RETURNS TABLE (swap_request_id INT, sender_coins INT[], sender_username VARCHAR, receiver_coins INT[], created_date TIMESTAMP, comment VARCHAR, archived BOOLEAN) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+
+    RETURN QUERY
+    SELECT swap_request.swap_request_id, swap_request.sender_coins, user_account.username AS sender_username, swap_request.receiver_coins, swap_request.created_date, swap_request.comment, swap_request.archived 
+    FROM swap_request 
+    LEFT JOIN user_account
+    ON swap_request.sender_id = user_account.user_id 
+    WHERE swap_request.receiver_id = added_coin_user_id
+    ORDER BY swap_request.swap_request_id DESC;
+END;
+$coins$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,

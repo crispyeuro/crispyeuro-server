@@ -480,6 +480,17 @@ app.get('/api/getSwapAddedCoin', (serverRequest, serverResponse) => {
     });
 });
 
+app.get('/api/getReceivedSwapRequests', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT * FROM get_received_swap_requests($1);", [access_token], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });
