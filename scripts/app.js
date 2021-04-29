@@ -491,10 +491,6 @@ app.get('/api/getReceivedSwapRequests', (serverRequest, serverResponse) => {
     });
 });
 
-process.on('exit', function () {
-    databaseClient.end();
-});
-
 app.post('/sendChangeRequestForm', (serverRequest, serverResponse) => {
     const access_token = serverRequest.cookies['access-token'];
 
@@ -510,4 +506,8 @@ app.post('/sendChangeRequestForm', (serverRequest, serverResponse) => {
             serverResponse.json(databaseResponse.rows);
         }
     });
+});
+
+process.on('exit', function () {
+    databaseClient.end();
 });
