@@ -568,6 +568,27 @@ BEGIN
 END;
 $coins$ LANGUAGE plpgsql;
 
+/*Change offered coins in a swap request*/
+CREATE OR REPLACE FUNCTION change_swap_request(access_token TEXT, sender_swap_request INTEGER, coins_to_offer INTEGER[])
+RETURNS VOID AS $$
+DECLARE
+    sender_user_id INTEGER;
+    request_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO sender_user_id WHERE user_session.access_token = $1;
+
+    SELECT swap_request.swap_request_id FROM swap_request
+    INTO request_id
+    WHERE swap_request.swap_request_id = $2
+    AND swap_request.sender_id = sender_user_id;
+
+    IF request_id = $2 THEN
+    INSERT INTO swap_request_changes (swap_request_id, sender_new_coins) VALUES ($2, $3);
+    UPDATE swap_request SET sender_coins = $3 WHERE swap_request_id = $2 AND sender_id = sender_user_id;
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
@@ -730,12 +751,12 @@ CREATE TABLE IF NOT EXISTS swap_request (
     CONSTRAINT fk_sender_id FOREIGN KEY(sender_id) REFERENCES user_account(user_id)
 );
 
-/*"Swap request changes" table. offered_coins accept coins' id from sender's "added coins" table*/
+/*"Swap request changes" table. "sender_new_coins" accept coins' id from sender's "added coins" table*/
 CREATE TABLE IF NOT EXISTS swap_request_changes (
     swap_request_changes_id INT GENERATED ALWAYS AS IDENTITY,
     swap_request_id INT,
-    offered_coins INTEGER[],
-    offer_date_time TIMESTAMP,
+    sender_new_coins INTEGER[],
+    changed_date TIMESTAMP NOT NULL DEFAULT NOW(),
     PRIMARY KEY(swap_request_changes_id),
     CONSTRAINT fk_swap_request_id FOREIGN KEY(swap_request_id) REFERENCES swap_request(swap_request_id)
 );

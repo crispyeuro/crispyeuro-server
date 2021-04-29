@@ -494,3 +494,20 @@ app.get('/api/getReceivedSwapRequests', (serverRequest, serverResponse) => {
 process.on('exit', function () {
     databaseClient.end();
 });
+
+app.post('/sendChangeRequestForm', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+
+    let coins = serverRequest.body.coinsToSwap;
+    coins = getAnArray(coins);
+    
+    let swapRequestId = serverRequest.body.swapRequestId;
+
+    databaseClient.query("SELECT change_swap_request($1, $2, $3);", [access_token, swapRequestId, coins], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
