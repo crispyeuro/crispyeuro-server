@@ -508,6 +508,17 @@ app.post('/sendChangeRequestForm', (serverRequest, serverResponse) => {
     });
 });
 
+app.get('/api/getSwapRequestChanges', (serverRequest, serverResponse) => {
+    const { swap_request_id } = serverRequest.query;
+    databaseClient.query("SELECT * FROM get_swap_request_changes($1);", [swap_request_id], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });

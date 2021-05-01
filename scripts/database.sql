@@ -589,6 +589,20 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/*Get swap request changes*/
+CREATE OR REPLACE FUNCTION get_swap_request_changes(swap_request_id INTEGER)
+RETURNS TABLE (sender_new_coins INT[], changed_date TIMESTAMP) AS $coins$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    RETURN QUERY
+    SELECT swap_request_changes.sender_new_coins, swap_request_changes.changed_date 
+    FROM swap_request_changes
+    WHERE swap_request_changes.swap_request_id = $1 
+    ORDER BY swap_request_changes.swap_request_id DESC;
+END;
+$coins$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
