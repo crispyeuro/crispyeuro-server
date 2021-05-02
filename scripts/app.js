@@ -519,6 +519,30 @@ app.get('/api/getSwapRequestChanges', (serverRequest, serverResponse) => {
     });
 });
 
+app.post('/cancelSwapRequest', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const cancelSwapRequestId = serverRequest.body.cancelSwapRequestId;
+    databaseClient.query("SELECT cancel_swap_request($1, $2);", [access_token, cancelSwapRequestId], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.post('/dismissSwapRequest', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const cancelSwapRequestId = serverRequest.body.dismissSwapRequestId;
+    databaseClient.query("SELECT dismiss_swap_request($1, $2);", [access_token, cancelSwapRequestId], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });

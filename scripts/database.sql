@@ -603,6 +603,29 @@ BEGIN
 END;
 $coins$ LANGUAGE plpgsql;
 
+/*Cancel swap request*/
+CREATE OR REPLACE FUNCTION cancel_swap_request(access_token TEXT, cancel_swap_request_id INTEGER)
+RETURNS VOID AS $$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+    DELETE FROM swap_request WHERE swap_request.sender_id = added_coin_user_id AND swap_request.swap_request_id = $2;
+END;
+$$ LANGUAGE plpgsql;
+
+/*Dismiss swap request*/
+CREATE OR REPLACE FUNCTION dismiss_swap_request(access_token TEXT, dismiss_swap_request_id INTEGER)
+RETURNS VOID AS $$
+DECLARE
+    added_coin_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO added_coin_user_id WHERE user_session.access_token = $1;
+    DELETE FROM swap_request WHERE swap_request.receiver_id = added_coin_user_id AND swap_request.swap_request_id = $2;
+END;
+$$ LANGUAGE plpgsql;
+
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
