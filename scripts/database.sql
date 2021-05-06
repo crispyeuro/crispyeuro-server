@@ -625,6 +625,51 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/*Send swap request message*/
+CREATE OR REPLACE FUNCTION swap_send_message(access_token TEXT, request_id INTEGER, receiver_username VARCHAR, swap_message VARCHAR)
+RETURNS VOID AS $$
+DECLARE
+    sender_user_id INTEGER;
+    receiver_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO sender_user_id WHERE user_session.access_token = $1;
+
+    SELECT user_account.user_id 
+    FROM user_account 
+    INTO receiver_user_id 
+    WHERE user_account.username = $3;
+
+    INSERT INTO swap_request_message (swap_request_id, sender_id, receiver_id, message) 
+    VALUES ($2, sender_user_id, receiver_user_id, $4);
+END;
+$$ LANGUAGE plpgsql;
+
+/*Get swap messages*/
+CREATE OR REPLACE FUNCTION swap_get_messages(access_token TEXT, swap_id INTEGER)
+RETURNS TABLE (message_id INT, sender_username VARCHAR, message VARCHAR, created_date TIMESTAMP) AS $coins$
+DECLARE
+    request_sender_user_id INTEGER;
+    swap_request_user_id_first INTEGER;
+    swap_request_user_id_second INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO request_sender_user_id WHERE user_session.access_token = $1;
+
+    SELECT swap_request.sender_id FROM swap_request INTO swap_request_user_id_first WHERE swap_request_id = $2;
+    SELECT swap_request.receiver_id FROM swap_request INTO swap_request_user_id_second WHERE swap_request_id = $2;
+
+    IF swap_request_user_id_first = request_sender_user_id OR swap_request_user_id_second = request_sender_user_id THEN 
+
+    RETURN QUERY
+    SELECT swap_request_message.swap_request_message_id, user_account.username AS sender_username, 
+    swap_request_message.message, swap_request_message.created_date 
+    FROM swap_request_message 
+    LEFT JOIN user_account 
+    ON user_account.user_id = swap_request_message.sender_id 
+    WHERE swap_request_message.swap_request_id = $2;
+    END IF;
+END;
+$coins$ LANGUAGE plpgsql;
+
 
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
@@ -801,11 +846,11 @@ CREATE TABLE IF NOT EXISTS swap_request_changes (
 /*Swap request message*/
 CREATE TABLE IF NOT EXISTS swap_request_message (
     swap_request_message_id INT GENERATED ALWAYS AS IDENTITY,
-    swap_request_id INT UNIQUE,
+    swap_request_id INT,
     sender_id INT,
     receiver_id INT,
     message VARCHAR(2000),
-    created TIMESTAMP,
+    created_date TIMESTAMP NOT NULL DEFAULT NOW(),
     PRIMARY KEY(swap_request_message_id),
     CONSTRAINT fk_swap_request_id FOREIGN KEY(swap_request_id) REFERENCES swap_request(swap_request_id),
     CONSTRAINT fk_sender_id FOREIGN KEY(sender_id) REFERENCES user_account(user_id)

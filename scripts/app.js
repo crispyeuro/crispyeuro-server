@@ -543,6 +543,32 @@ app.post('/dismissSwapRequest', (serverRequest, serverResponse) => {
     });
 });
 
+app.post('/swapSendMessage', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const swapRequestId = serverRequest.body.swapRequestId;
+    const receiverUsername = serverRequest.body.receiverUsername;
+    const message = serverRequest.body.message;
+    databaseClient.query("SELECT swap_send_message($1, $2, $3, $4);", [access_token, swapRequestId, receiverUsername, message], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.get('/api/getSwapMessages', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const { swap_request_id } = serverRequest.query;
+    databaseClient.query("SELECT * FROM swap_get_messages($1, $2);", [access_token, swap_request_id], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });
