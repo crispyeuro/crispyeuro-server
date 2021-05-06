@@ -569,6 +569,17 @@ app.get('/api/getSwapMessages', (serverRequest, serverResponse) => {
     });
 });
 
+app.get('/api/settingsGetUserData', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT * FROM settings_get_user_data($1);", [access_token], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });

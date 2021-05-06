@@ -670,6 +670,21 @@ BEGIN
 END;
 $coins$ LANGUAGE plpgsql;
 
+/*Get user data for 'Settings' tab*/
+CREATE OR REPLACE FUNCTION settings_get_user_data(access_token TEXT)
+RETURNS TABLE (name VARCHAR, username VARCHAR, email VARCHAR, address VARCHAR) AS $user_data$
+DECLARE
+    request_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO request_user_id WHERE user_session.access_token = $1;
+
+    RETURN QUERY
+    SELECT user_account.name, user_account.username, user_account.email, user_account.address 
+    FROM user_account
+    WHERE user_account.user_id = request_user_id;
+END;
+$user_data$ LANGUAGE plpgsql;
+
 
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
