@@ -580,6 +580,22 @@ app.get('/api/settingsGetUserData', (serverRequest, serverResponse) => {
     });
 });
 
+/*Change user data from the 'Settings' tab*/
+app.post('/changeUserData', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const name = serverRequest.body.name;
+    const email = serverRequest.body.email;
+    const password = serverRequest.body.password;
+    const address = serverRequest.body.address;
+    databaseClient.query("SELECT change_user_data($1, $2, $3, $4, $5);", [access_token, name, email, password, address], (error, databaseResponse) => {
+        if (error) {
+            serverResponse.json({ error: error.message });
+        } else {
+            serverResponse.sendStatus(200);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });

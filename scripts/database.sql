@@ -686,16 +686,27 @@ END;
 $user_data$ LANGUAGE plpgsql;
 
 
+CREATE OR REPLACE FUNCTION change_user_data(access_token TEXT, name TEXT, email TEXT, password TEXT, address TEXT)
+RETURNS VOID AS $$
+DECLARE
+    request_user_id INTEGER;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO request_user_id WHERE user_session.access_token = $1;
+
+    PERFORM validate_password($3);
+    UPDATE user_account
+    SET name = $2, email = $3, password = crypt($4, gen_salt('bf')), address = $5
+    WHERE user_id = request_user_id;
+END;
+$$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(200),
     username VARCHAR(20) UNIQUE NOT NULL,
     password VARCHAR(60) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    birthday DATE,
-    gender VARCHAR(6) CHECK (gender IN ('male', 'female')),
-    country VARCHAR(200),
+    email VARCHAR(255) NOT NULL,
     address VARCHAR(200),
     PRIMARY KEY(user_id)
 );
