@@ -537,12 +537,12 @@ $coins$ LANGUAGE plpgsql;
 
 /*Get added coin for 'Swap' coincard*/
 CREATE OR REPLACE FUNCTION get_swap_added_coin(swap_added_coin_id INTEGER)
-RETURNS TABLE (country VARCHAR, issue_year INT, denomination DECIMAL, coin_type VARCHAR, obverse_image_path VARCHAR, added_coin_id INT, grade VARCHAR, coin_value VARCHAR, amount INT, design VARCHAR, in_set VARCHAR, image_path VARCHAR, comment VARCHAR) AS $coins$
+RETURNS TABLE (country VARCHAR, issue_year INT, denomination DECIMAL, coin_type VARCHAR, obverse_image_path VARCHAR, coin_id INT, added_coin_id INT, grade VARCHAR, coin_value VARCHAR, amount INT, design VARCHAR, in_set VARCHAR, image_path VARCHAR, comment VARCHAR) AS $coins$
 DECLARE
     added_coin_user_id INTEGER;
 BEGIN
     RETURN QUERY
-    SELECT coin.country, coin.issue_year, coin.denomination, coin.coin_type, coin.obverse_image_path, added_coin.added_coin_id, added_coin.grade, added_coin.coin_value, added_coin.amount, added_coin.design, added_coin.in_set, added_coin.image_path, added_coin.comment  
+    SELECT coin.country, coin.issue_year, coin.denomination, coin.coin_type, coin.obverse_image_path, added_coin.coin_id, added_coin.added_coin_id, added_coin.grade, added_coin.coin_value, added_coin.amount, added_coin.design, added_coin.in_set, added_coin.image_path, added_coin.comment  
     FROM added_coin 
     LEFT JOIN coin
     ON added_coin.coin_id = coin.coin_id 
