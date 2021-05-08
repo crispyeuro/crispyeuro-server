@@ -596,6 +596,19 @@ app.post('/changeUserData', (serverRequest, serverResponse) => {
     });
 });
 
+/*Coins swap*/
+app.post('/performCoinsSwap', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    const swapRequestId = serverRequest.body.swapRequestId;
+    databaseClient.query("SELECT perform_coins_swap($1, $2);", [access_token, swapRequestId], (error, databaseResponse) => {
+        if (error) {
+            serverResponse.json({ error: error.message });
+        } else {
+            serverResponse.sendStatus(200);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });

@@ -700,6 +700,59 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/*Perform coins swap*/
+CREATE OR REPLACE FUNCTION perform_coins_swap(access_token TEXT, swap_request_id INTEGER)
+RETURNS VOID AS $$
+DECLARE
+    swap_receiver_user_id INTEGER;
+    swap_sender_user_id INTEGER;
+    swap_sender_coins INTEGER[];
+    swap_receiver_coins INTEGER[];
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO swap_receiver_user_id WHERE user_session.access_token = $1;
+
+    SELECT swap_request.sender_id 
+    FROM swap_request 
+    INTO swap_sender_user_id 
+    WHERE swap_request.swap_request_id = $2 AND swap_request.receiver_id = swap_receiver_user_id;
+
+    SELECT swap_request.sender_coins 
+    FROM swap_request 
+    INTO swap_sender_coins 
+    WHERE swap_request.swap_request_id = $2 AND swap_request.receiver_id = swap_receiver_user_id;
+
+    SELECT swap_request.receiver_coins 
+    FROM swap_request 
+    INTO swap_receiver_coins 
+    WHERE swap_request.swap_request_id = $2 AND swap_request.receiver_id = swap_receiver_user_id;
+
+    EXECUTE swap_change_added_coins_owner(swap_sender_coins, swap_receiver_user_id);
+    EXECUTE swap_change_added_coins_owner(swap_receiver_coins, swap_sender_user_id);
+
+    DELETE FROM swap_request WHERE swap_request.swap_request_id = $2;
+END;
+$$ LANGUAGE plpgsql;
+
+/*Coins swap. Change added coins owner*/
+CREATE OR REPLACE FUNCTION swap_change_added_coins_owner(coins INTEGER[], coins_receiver_id INTEGER)
+RETURNS VOID AS $$
+DECLARE
+    coins_array_length INT;
+    x INT;
+BEGIN
+    SELECT cardinality($1) INTO coins_array_length;
+
+    IF coins_array_length > 0 THEN
+    FOREACH x IN ARRAY $1
+    LOOP 
+        UPDATE added_coin 
+        SET user_id = $2, comment = '', swap_availability = FALSE 
+        WHERE added_coin_id = x;
+    END LOOP;
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
@@ -866,7 +919,7 @@ CREATE TABLE IF NOT EXISTS swap_request_changes (
     sender_new_coins INTEGER[],
     changed_date TIMESTAMP NOT NULL DEFAULT NOW(),
     PRIMARY KEY(swap_request_changes_id),
-    CONSTRAINT fk_swap_request_id FOREIGN KEY(swap_request_id) REFERENCES swap_request(swap_request_id)
+    CONSTRAINT fk_swap_request_id FOREIGN KEY(swap_request_id) REFERENCES swap_request(swap_request_id) ON DELETE CASCADE
 );
 
 /*Swap request message*/
@@ -878,7 +931,7 @@ CREATE TABLE IF NOT EXISTS swap_request_message (
     message VARCHAR(2000),
     created_date TIMESTAMP NOT NULL DEFAULT NOW(),
     PRIMARY KEY(swap_request_message_id),
-    CONSTRAINT fk_swap_request_id FOREIGN KEY(swap_request_id) REFERENCES swap_request(swap_request_id),
+    CONSTRAINT fk_swap_request_id FOREIGN KEY(swap_request_id) REFERENCES swap_request(swap_request_id) ON DELETE CASCADE,
     CONSTRAINT fk_sender_id FOREIGN KEY(sender_id) REFERENCES user_account(user_id)
 );
 
