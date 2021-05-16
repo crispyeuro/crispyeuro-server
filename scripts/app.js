@@ -51,7 +51,7 @@ app.get('/api/first-row', (serverRequest, serverResponse) => {
     })
 });
 
-app.get('/api/lala', (serverRequest, serverResponse) => {
+app.get('/api/getCoinData', (serverRequest, serverResponse) => {
     const { coin_id } = serverRequest.query;
     databaseClient.query('SELECT coin.*, coin_mintage.coin_mintage_id, coin_mintage.mintage_total, coin_mintage.uncirculated, coin_mintage.brilliant_uncirculated, coin_mintage.proof, coin_mintage.mintmark, coin_mintage.mint, coin_mintage.issue_date, coin_mintage.mintage_description FROM coin LEFT OUTER JOIN coin_mintage ON coin.coin_id = coin_mintage.coin_id WHERE coin.coin_id = $1;', [coin_id], (err, databaseResponse) => {
         if (err) {
