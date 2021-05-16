@@ -609,6 +609,27 @@ app.post('/performCoinsSwap', (serverRequest, serverResponse) => {
     });
 });
 
+app.get('/api/statisticsGetAddedCoins', (serverRequest, serverResponse) => {
+    const access_token = serverRequest.cookies['access-token'];
+    databaseClient.query("SELECT * FROM statistics_get_added_coins($1);", [access_token], (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
+app.get('/api/statisticsGetCoins', (serverRequest, serverResponse) => {
+    databaseClient.query("SELECT * FROM statistics_get_coins();", (error, databaseResponse) => {
+        if (error) {
+            console.log(error.stack);
+        } else {
+            serverResponse.json(databaseResponse.rows);
+        }
+    });
+});
+
 process.on('exit', function () {
     databaseClient.end();
 });

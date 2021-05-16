@@ -753,6 +753,28 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+/*Get added coins for 'Statistics tab'*/
+CREATE OR REPLACE FUNCTION statistics_get_added_coins(access_token TEXT)
+RETURNS TABLE (coin_id INTEGER, coin_type VARCHAR) AS $statistics_added_coins$
+DECLARE
+    statistics_user_id INT;
+BEGIN
+    SELECT user_session.user_id FROM user_session INTO statistics_user_id WHERE user_session.access_token = $1;
+    
+    RETURN QUERY
+    SELECT DISTINCT added_coin.coin_id, coin.coin_type FROM added_coin LEFT JOIN coin ON coin.coin_id = added_coin.coin_id WHERE added_coin.user_id = statistics_user_id;
+END;
+$statistics_added_coins$ LANGUAGE plpgsql;
+
+/*Get coins for 'Statistics tab'*/
+CREATE OR REPLACE FUNCTION statistics_get_coins()
+RETURNS TABLE (coin_id INTEGER, coin_type VARCHAR) AS $statistics_added_coins$
+BEGIN
+    RETURN QUERY
+    SELECT coin.coin_id, coin.coin_type FROM coin;
+END;
+$statistics_added_coins$ LANGUAGE plpgsql;
+
 /*User account*/
 CREATE TABLE IF NOT EXISTS user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
