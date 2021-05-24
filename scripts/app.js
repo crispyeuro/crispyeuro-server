@@ -12,6 +12,7 @@ const databaseClient = new pg.Client();
 async function test() {
     await databaseClient.connect();
     await loadDatabaseCreationCode(databaseClient);
+    await loadDatabaseDataCode(databaseClient);
 }
 
 async function loadDatabaseCreationCode(databaseClient) {
@@ -21,6 +22,17 @@ async function loadDatabaseCreationCode(databaseClient) {
 
 async function readDatabaseCreationCode() {
     const buffer = await readFile('./scripts/database.sql');
+    const code = buffer.toString();
+    return code;
+}
+
+async function loadDatabaseDataCode(databaseClient) {
+    const code = await readDatabaseDataCode();
+    await databaseClient.query(code);
+}
+
+async function readDatabaseDataCode() {
+    const buffer = await readFile('./scripts/data.sql');
     const code = buffer.toString();
     return code;
 }
