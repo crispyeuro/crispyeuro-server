@@ -1,10 +1,13 @@
-/*Insert queries*/
-/*Insert test data into 'user_status' table*/
-/*INSERT INTO user_status(user_id, created_on, email_verified, last_login, user_active) VALUES (1, '2020-03-06 19:20:26-01', true, '2020-03-06 19:23:38-08', true);
-INSERT INTO user_status(user_id, created_on, email_verified, user_active) VALUES (2, '2020-03-06 19:31:28-05', false, false);
+/*
+This file contains initial coins and data related to initial coins.
+
+If the application is to be executed for the first time, 
+please uncomment the code below, execute the application, and comment the code below again.
+NB! The code below to be executed only once!
 */
-/*Insert coins into 'coins' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+
+/*
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2011, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -20,34 +23,14 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Estonia', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "EESTI O EESTI 0"');
-*/
-/*Insert coins' mintages into 'coin_mintage' table*/
-/*INSERT INTO coin_mintage (coin_id, mintage_total, uncirculated, brilliant_uncirculated, proof, mint) 
-    VALUES (1, 32000000, 50000, 3500, 'Mint of Finland');
-INSERT INTO coin_mintage (coin_id, mintage_total, uncirculated, brilliant_uncirculated, proof, mint) 
-    VALUES (2, 30000000, 50000, 3500, 'Mint of Finland');
-*/
-/*Insert added coin into 'added coin'*/
-/*INSERT INTO added_coin (coin_id, user_id, grade, coin_value, amount, comment, swap_availability) VALUES (8, 1, 'UNC', '2.5 eur', 1, 'My first coin...', false);
-INSERT INTO added_coin (coin_id, user_id, grade, coin_value, amount, comment, swap_availability) VALUES (2, 1, 'UNC', '0.1 cent', 2, 'My second coin...', true);
-*/
-/*Insert wanted coin into 'wanted_coin'*/
-/*INSERT INTO wanted_coin (coin_id, user_id, grade, amount, comment) VALUES (3, 1, 'UNC', 1, 'Want this coin');
-*/
-/*Insert coincard coin swap settings value*/
-/*INSERT INTO coincard_swap_settings (coin_id, user_id, swap_enabled) VALUES (8, 1, false);
-*/
-/*Insert ESTONIA coins into 'coin' table
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2012, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2015, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -64,7 +47,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Estonia', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "EESTI O EESTI 0"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -73,7 +55,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Estonia', 2017, '0.05', 'ordinary', 21.25, 1.67, 3.92, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2017, '0.2', 'ordinary', 22.25, 2.14, 5.74, 'Nordic gold', 'Plain with seven indents (Spanish flower)');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -90,16 +71,13 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Estonia', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "EESTI O EESTI 0"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2020, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Estonia', 2020, '0.2', 'ordinary', 22.25, 2.14, 5.74, 'Nordic gold', 'Plain with seven indents (Spanish flower)');
-*/
-/*Insert LATVIA coins into 'coin' table
+
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -116,7 +94,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Latvia', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "DIEVS * SVĒTĪ * LATVIJU"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -133,7 +110,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Latvia', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "DIEVS * SVĒTĪ * LATVIJU"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -150,7 +126,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Latvia', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "DIEVS * SVĒTĪ * LATVIJU"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -167,7 +142,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Latvia', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "DIEVS * SVĒTĪ * LATVIJU"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -184,7 +158,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Latvia', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "DIEVS * SVĒTĪ * LATVIJU"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -201,7 +174,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Latvia', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "DIEVS * SVĒTĪ * LATVIJU"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -218,14 +190,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Latvia', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Latvia', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "DIEVS * SVĒTĪ * LATVIJU"');
-*/
 
-/*Set client encoding to 'UTF8'*/
-/*SET client_encoding TO 'UTF8';
-*/
-
-/*Insert LITHUANIA coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2015, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -241,10 +207,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Lithuania', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "LAISVĖ * VIENYBĖ * GEROVĖ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -255,7 +219,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Lithuania', 2017, '0.2', 'ordinary', 22.25, 2.14, 5.74, 'Nordic gold', 'Plain with seven indents (Spanish flower)');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "LAISVĖ * VIENYBĖ * GEROVĖ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -272,7 +235,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Lithuania', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "LAISVĖ * VIENYBĖ * GEROVĖ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -289,7 +251,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Lithuania', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "LAISVĖ * VIENYBĖ * GEROVĖ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -306,7 +267,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Lithuania', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "LAISVĖ * VIENYBĖ * GEROVĖ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -323,10 +283,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Lithuania', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Lithuania', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "LAISVĖ * VIENYBĖ * GEROVĖ"');
-*/
 
-/*Insert ANDORRA coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2014, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -342,7 +300,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Andorra', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -359,7 +316,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Andorra', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -376,7 +332,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Andorra', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -393,7 +348,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Andorra', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -410,7 +364,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Andorra', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -427,7 +380,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Andorra', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -444,10 +396,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Andorra', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Andorra', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-*/
 
-/*Insert AUSTRIA coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -463,7 +413,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -480,7 +429,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -497,7 +445,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -512,7 +459,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2005, '0.5', 'ordinary', 24.25, 2.38, 7.8, 'Nordic gold', 'Shaped edge with fine scallops');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -529,7 +475,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -544,7 +489,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2007, '0.5', 'ordinary', 24.25, 2.38, 7.8, 'Nordic gold', 'Shaped edge with fine scallops');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -561,7 +505,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -576,7 +519,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2009, '0.5', 'ordinary', 24.25, 2.38, 7.8, 'Nordic gold', 'Shaped edge with fine scallops');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -593,7 +535,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -610,7 +551,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -627,7 +567,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -644,7 +583,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -661,7 +599,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -678,7 +615,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -693,7 +629,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2016, '0.5', 'ordinary', 24.25, 2.38, 7.8, 'Nordic gold', 'Shaped edge with fine scallops');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -710,7 +645,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -725,7 +659,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2018, '0.5', 'ordinary', 24.25, 2.38, 7.8, 'Nordic gold', 'Shaped edge with fine scallops');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -742,7 +675,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -759,7 +691,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -776,10 +707,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Austria', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Austria', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 EURO *** 2 EURO *** 2 EURO *** 2 EURO ***"');
-*/
 
-/*Insert BELGIUM coin into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 1999, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 1999, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -795,7 +724,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 1999, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 1999, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2000, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -812,7 +740,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2000, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2000, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2001, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -829,7 +756,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2001, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2001, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -846,7 +772,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -863,7 +788,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -880,7 +804,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -897,7 +820,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -914,7 +836,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -931,7 +852,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -948,7 +868,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -965,7 +884,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -982,7 +900,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -999,7 +916,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1016,7 +932,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1033,7 +948,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1050,7 +964,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1067,7 +980,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1084,7 +996,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1101,7 +1012,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1118,7 +1028,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1135,7 +1044,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1152,10 +1060,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Belgium', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Belgium', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"');
-*/
 
-/*Insert CYPRUS coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2008, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -1171,7 +1077,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1188,7 +1093,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1205,7 +1109,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1222,7 +1125,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1239,7 +1141,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1256,7 +1157,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1273,7 +1173,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1290,7 +1189,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1307,7 +1205,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1324,7 +1221,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1341,7 +1237,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1358,7 +1253,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1375,10 +1269,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Cyprus', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Cyprus', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ΕΥΡΩ 2 EURO 2 ΕΥΡΩ 2 EURO"');
-*/
 
-/*Insert FINLAND coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 1999, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 1999, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -1394,7 +1286,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 1999, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 1999, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2000, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1411,7 +1302,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2000, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2000, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2001, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1428,7 +1318,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2001, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2001, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1445,7 +1334,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1462,7 +1350,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1479,7 +1366,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1496,7 +1382,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1513,7 +1398,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1530,7 +1414,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1547,7 +1430,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1564,7 +1446,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1581,7 +1462,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1598,7 +1478,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1615,7 +1494,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1632,7 +1510,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1649,7 +1526,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1666,7 +1542,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1683,7 +1558,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1700,7 +1574,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1717,12 +1590,10 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2019, '0.05', 'ordinary', 21.25, 1.67, 3.92, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1739,10 +1610,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Finland', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Finland', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "SUOMI FINLAND", 3 lion heads');
-*/
 
-/*Insert FRANCE coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 1999, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 1999, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -1758,7 +1627,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 1999, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 1999, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2000, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1775,7 +1643,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2000, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2000, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2001, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1792,7 +1659,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2001, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2001, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1809,7 +1675,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1826,7 +1691,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1843,7 +1707,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1860,7 +1723,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1877,7 +1739,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1894,7 +1755,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1911,7 +1771,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1928,7 +1787,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1945,7 +1803,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1962,7 +1819,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1979,7 +1835,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -1996,7 +1851,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2013,7 +1867,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2030,7 +1883,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2047,7 +1899,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2064,7 +1915,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2081,7 +1931,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2098,7 +1947,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2115,7 +1963,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2132,10 +1979,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('France', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('France', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-*/
 
-/*Insert GREECE coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -2151,7 +1996,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2168,7 +2012,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2185,7 +2028,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2202,7 +2044,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2219,7 +2060,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2236,7 +2076,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2253,7 +2092,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2270,7 +2108,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2287,7 +2124,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2304,7 +2140,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2321,7 +2156,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2338,7 +2172,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2355,7 +2188,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2372,7 +2204,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2389,7 +2220,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2406,7 +2236,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2423,7 +2252,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2440,7 +2268,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2457,10 +2284,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Greece', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Greece', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ"');
-*/
 
-/*Insert IRELAND coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -2476,7 +2301,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2493,7 +2317,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2510,7 +2333,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2527,7 +2349,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2544,7 +2365,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2561,7 +2381,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2578,7 +2397,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2595,7 +2413,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2612,7 +2429,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2629,7 +2445,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2646,7 +2461,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2663,7 +2477,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2680,7 +2493,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2697,7 +2509,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2714,7 +2525,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2731,7 +2541,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2748,7 +2557,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2765,7 +2573,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2782,10 +2589,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Ireland', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Ireland', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-*/
 
-/*Insert ITALY coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -2801,7 +2606,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2818,7 +2622,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2835,7 +2638,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2852,7 +2654,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2869,7 +2670,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2886,7 +2686,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2903,7 +2702,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2920,7 +2718,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2937,7 +2734,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2954,7 +2750,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2971,7 +2766,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -2988,7 +2782,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3005,7 +2798,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3022,7 +2814,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3039,7 +2830,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3056,7 +2846,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3073,7 +2862,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3090,7 +2878,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3107,7 +2894,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3124,10 +2910,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Italy', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Italy', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-*/
 
-/*Insert LUXEMBOURG coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -3143,7 +2927,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3160,7 +2943,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3177,7 +2959,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3194,7 +2975,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3211,7 +2991,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3228,7 +3007,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3245,7 +3023,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3262,7 +3039,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3279,7 +3055,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3296,7 +3071,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3313,7 +3087,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3330,7 +3103,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3347,7 +3119,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3364,7 +3135,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3381,7 +3151,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3398,7 +3167,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3415,7 +3183,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3432,7 +3199,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3449,10 +3215,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Luxembourg', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Luxembourg', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 ** 2 ** 2 ** 2 ** 2 ** 2 **" upright and inverted');
-*/
 
-/*Insert PORTUGAL coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -3468,7 +3232,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3485,7 +3248,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3502,7 +3264,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3519,7 +3280,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3536,7 +3296,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3553,7 +3312,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3570,7 +3328,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3587,7 +3344,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3604,7 +3360,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3621,7 +3376,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3638,7 +3392,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3655,7 +3408,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3672,7 +3424,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3689,7 +3440,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3706,7 +3456,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3723,7 +3472,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3740,7 +3488,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3757,7 +3504,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3774,10 +3520,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Portugal', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Portugal', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '7 castles and 5 coats of arms');
-*/
 
-/*Insert VATICAN coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -3793,7 +3537,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3810,7 +3553,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3827,7 +3569,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3844,7 +3585,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3861,7 +3601,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3878,7 +3617,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3895,7 +3633,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3912,7 +3649,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3929,7 +3665,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3946,7 +3681,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3963,7 +3697,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3980,7 +3713,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -3997,7 +3729,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4014,7 +3745,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4031,7 +3761,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4048,7 +3777,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4065,7 +3793,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4082,7 +3809,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4099,10 +3825,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Vatican', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Vatican', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-*/
 
-/*Insert SPAIN coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 1999, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 1999, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -4118,7 +3842,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 1999, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 1999, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2000, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4135,7 +3858,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2000, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2000, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2001, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4152,7 +3874,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2001, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2001, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4169,7 +3890,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4186,7 +3906,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4203,7 +3922,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4220,7 +3938,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4237,7 +3954,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4254,7 +3970,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4271,7 +3986,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4288,7 +4002,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4305,7 +4018,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4322,7 +4034,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4339,7 +4050,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4356,7 +4066,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4373,7 +4082,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4390,7 +4098,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4407,7 +4114,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4424,7 +4130,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4441,7 +4146,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4458,7 +4162,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4475,10 +4178,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Spain', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Spain', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 * " upright and inverted');
-*/
 
-/*Insert NETHERLANDS coins into 'coins' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 1999, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 1999, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -4494,7 +4195,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 1999, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 1999, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2000, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4511,7 +4211,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2000, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2000, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2001, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4528,7 +4227,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2001, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2001, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4545,7 +4243,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4562,7 +4259,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4579,7 +4275,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4596,7 +4291,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4613,7 +4307,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4630,7 +4323,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4647,7 +4339,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4664,7 +4355,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4681,7 +4371,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4698,7 +4387,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4715,7 +4403,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4732,7 +4419,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4749,7 +4435,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4766,7 +4451,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4783,7 +4467,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4800,7 +4483,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4817,7 +4499,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4834,7 +4515,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4851,7 +4531,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4868,10 +4547,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Netherlands', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Netherlands', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"GOD * ZIJ * MET * ONS *"');
-*/
 
-/*Insert SAN MARINO coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -4887,7 +4564,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4904,7 +4580,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4921,7 +4596,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4938,7 +4612,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4955,7 +4628,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4972,7 +4644,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -4989,7 +4660,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5006,7 +4676,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5023,7 +4692,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5040,7 +4708,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5057,7 +4724,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5074,7 +4740,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5091,7 +4756,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5108,7 +4772,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5125,7 +4788,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5142,7 +4804,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5159,7 +4820,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5176,7 +4836,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5193,10 +4852,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('San-Marino', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('San-Marino', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * 2 * 2 * 2 * 2 * 2 *" upright and inverted');
-*/
 
-/*Insert SLOVENIA coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2007, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -5212,7 +4869,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5229,7 +4885,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5246,7 +4901,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5263,7 +4917,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5280,7 +4933,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5297,7 +4949,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5314,7 +4965,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5331,7 +4981,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5348,7 +4997,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5365,7 +5013,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5382,7 +5029,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5399,7 +5045,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5416,7 +5061,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5433,10 +5077,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovenia', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovenia', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENIJA"');
-*/
 
-/*Insert SLOVAKIA coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2009, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -5452,7 +5094,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5469,7 +5110,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5486,7 +5126,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5503,7 +5142,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5520,7 +5158,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5537,7 +5174,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5554,7 +5190,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5571,7 +5206,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5588,7 +5222,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5605,7 +5238,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5622,7 +5254,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5639,10 +5270,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Slovakia', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Slovakia', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"SLOVENSKÁ REPUBLIKA", star on both sides of lettering');
-*/
 
-/*Insert MALTA coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2008, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -5658,10 +5287,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5678,7 +5305,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5695,7 +5321,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5712,7 +5337,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5729,7 +5353,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5746,7 +5369,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5763,7 +5385,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5780,7 +5401,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5797,7 +5417,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5814,7 +5433,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5831,10 +5449,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Malta', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Malta', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '6 times "2", 2 Maltese crosses, upright and inverted');
-*/
 
-/*Insert MONACO coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2001, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2001, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -5850,7 +5466,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2001, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2001, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5867,7 +5482,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2003, '0.1', 'ordinary', 22.25, 2.14, 5.74, 'Nordic gold', 'Shaped edge with file scallops');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5878,7 +5492,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5895,14 +5508,12 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2005, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2005, '0.05', 'ordinary', 21.25, 1.67, 3.92, 'Copper-covered steel', 'Smooth');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5919,10 +5530,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5939,10 +5548,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5959,10 +5566,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5979,7 +5584,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -5996,15 +5600,12 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6021,17 +5622,14 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6048,10 +5646,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Monaco', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Monaco', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"2 * * 2 * * 2 * * 2 * * 2 * * 2 * *", upright and inverted');
-*/
 
-/*Insert GERMANY "A" coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -6067,7 +5663,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6084,7 +5679,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6101,7 +5695,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6118,7 +5711,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6135,7 +5727,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6152,7 +5743,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6169,7 +5759,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6186,7 +5775,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6203,7 +5791,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6220,7 +5807,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6237,7 +5823,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6254,7 +5839,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6271,7 +5855,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6288,7 +5871,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6305,7 +5887,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6322,7 +5903,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6339,7 +5919,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6356,7 +5935,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6373,7 +5951,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6390,10 +5967,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"A"', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"A"', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-*/
 
-/*Insert GERMANY "D" coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -6409,7 +5984,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6426,7 +6000,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6443,7 +6016,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6460,7 +6032,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6477,7 +6048,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6494,7 +6064,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6511,7 +6080,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6528,7 +6096,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6545,7 +6112,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6562,7 +6128,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6579,7 +6144,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6596,7 +6160,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6613,7 +6176,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6630,7 +6192,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6647,7 +6208,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6664,7 +6224,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6681,7 +6240,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6698,7 +6256,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6715,7 +6272,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6732,10 +6288,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"D"', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"D"', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-*/
 
-/*Insert GERMANY "F" coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -6751,7 +6305,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6768,7 +6321,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6785,7 +6337,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6802,7 +6353,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6819,7 +6369,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6836,7 +6385,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6853,7 +6401,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6870,7 +6417,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6887,7 +6433,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6904,7 +6449,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6921,7 +6465,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6938,7 +6481,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6955,7 +6497,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6972,7 +6513,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -6989,7 +6529,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7006,7 +6545,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7023,7 +6561,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7040,7 +6577,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7057,7 +6593,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7074,10 +6609,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"F"', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"F"', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-*/
 
-/*Insert GERMANY "G" coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -7093,7 +6626,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7110,7 +6642,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7127,7 +6658,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7144,7 +6674,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7161,7 +6690,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7178,7 +6706,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7195,7 +6722,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7212,7 +6738,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7229,7 +6754,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7246,7 +6770,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7263,7 +6786,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7280,7 +6802,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7297,7 +6818,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7314,7 +6834,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7331,7 +6850,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7348,7 +6866,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7365,7 +6882,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7382,7 +6898,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7399,7 +6914,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7416,10 +6930,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"G"', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"G"', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-*/
 
-/*Insert GERMANY "J" coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2002, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2002, '0.02', 'ordinary', 18.75, 1.67, 3.06, 'Copper-covered steel', 'Smooth with a groove');
@@ -7435,7 +6947,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2002, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2002, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2003, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7452,7 +6963,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2003, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2003, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2004, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7469,7 +6979,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2004, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2004, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2005, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7486,7 +6995,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2005, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2005, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2006, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7503,7 +7011,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2006, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2006, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2007, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7520,7 +7027,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2007, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2007, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2008, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7537,7 +7043,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2008, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2008, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2009, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7554,7 +7059,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2009, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2009, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2010, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7571,7 +7075,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2010, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2010, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2011, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7588,7 +7091,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2011, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2011, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2012, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7605,7 +7107,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2012, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2012, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2013, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7622,7 +7123,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2013, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2013, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2014, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7639,7 +7139,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2014, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2014, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2015, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7656,7 +7155,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2015, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2015, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2016, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7673,7 +7171,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2016, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2016, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2017, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7690,7 +7187,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2017, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2017, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2018, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7707,7 +7203,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2018, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2018, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2019, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7724,7 +7219,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2019, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2019, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2020, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7741,7 +7235,6 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2020, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2020, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2021, '0.01', 'ordinary', 16.25, 1.67, 2.3, 'Copper-covered steel', 'Smooth');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
@@ -7758,10 +7251,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
     VALUES ('Germany-"J"', 2021, '1', 'ordinary', 23.25, 2.33, 7.5, 'Outer part: nickel brass, Inner part: Layers of copper-nickel, nickel, copper-nickel', 'Interrupted milled');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge) 
     VALUES ('Germany-"J"', 2021, '2', 'ordinary', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', '"EINIGKEIT UND RECHT UND FREIHEIT"');
-*/
 
-/*Insert 2004 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Greece', 2004, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Summer Olympics in Athens 2004');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -7779,9 +7270,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Vatican', 2004, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '75th anniversary of the Foundation of the Vatican City State');
-*/
-/*Insert 2005 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Luxembourg', 2005, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th birthday of Grand Duke Henri, 5th anniversary of his accession to the throne and 100th anniversary of the death of Grand Duke Adolphe');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -7805,9 +7295,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Vatican', 2005, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '20th World Youth Day, held in Cologne in August 2005');
-*/
-/*Insert 2006 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Italy', 2006, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Winter Olympics in Turin 2006');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -7828,9 +7317,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Vatican', 2006, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '500th anniversary of the Swiss Guard');
-*/
-/*Insert 2007 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Germany', 2007, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Schwerin Castle (Mecklenburg-Vorpommern)');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -7851,9 +7339,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Finland', 2007, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '90th anniversary of Finland independence');
-*/
-/*Insert 2007 year common commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Austria', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -7892,9 +7379,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('France', 2007, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50th anniversary of the Signature of the Treaty of Rome');
-*/
-/*Insert 2008 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Germany', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'St. Michaelis Church (Hamburg)');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -7924,9 +7410,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Finland', 2008, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '60th anniversary of the Universal Declaration of Human Rights');
-*/
-/*Insert 2009 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Luxembourg', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '90th anniversary of Grand Duchess Charlotte Accession to the Throne');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -7953,9 +7438,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Finland', 2009, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of Finnish Autonomy');
-*/
-/*Insert 2009 year common commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Ireland', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8003,9 +7487,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Italy', 2009, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Ten years of Economic and Monetary Union (EMU) and the birth of the euro');
-*/
-/*Insert 2010 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Luxembourg', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Arms of the Grand Duke');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8041,9 +7524,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Greece', 2010, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '25th Centenary of the Battle of Marathon');
-*/
-/*Insert 2011 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Slovakia', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '20th anniversary of Foundation of the Visegrád Group');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8091,9 +7573,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Vatican', 2011, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '26th World Youth Day in August 2011');
-*/
-/*Insert 2012 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Germany', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Neuschwanstein Castle near Füssen (Bavaria)');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8132,9 +7613,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Luxembourg', 2012, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Royal Wedding of Guillaume, Hereditary Grand Duke of Luxembourg to Countess Stéphanie de Lannoy');
-*/
-/*Insert 2012 year common commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Austria', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8185,9 +7665,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Malta', 2012, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '10th anniversary of Euro coins and banknotes');
-*/
-/*Insert 2013 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Germany', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years of Franco-German Friendship (Élysée Treaty)');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8256,9 +7735,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Netherlands', 2013, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the Kingdom of the Netherlands');
-*/
-/*Insert 2014 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Luxembourg', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years of Franco-German Friendship (Élysée Treaty)');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8339,9 +7817,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Andorra', 2014, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the Kingdom of the Netherlands');
-*/
-/*Insert 2015 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Germany', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Paulskirche in Frankfurt am Main');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8425,9 +7902,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Andorra', 2015, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30 years since 18 became Legal Age');
-*/
-/*Insert 2015 year common commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Finland', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8484,9 +7960,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Greece', 2015, '2', 'commemorative_common', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '30th anniversary of the Flag of Europe');
-*/
-/*Insert 2016 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Austria', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '200th anniversary of the founding of Austria`s central bank Oesterreichische Nationalbank');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8582,9 +8057,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Andorra', 2016, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '150 years of the New Reform 1866');
-*/
-/*Insert 2017 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Luxembourg', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '50 years since the foundation of the current Luxembourg Army');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8680,9 +8154,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Andorra', 2017, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Andorra – The Pyrenean country');
-*/
-/*Insert 2018 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Austria', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the foundation of the Republic of Austria');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8790,9 +8263,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Andorra', 2018, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '70th anniversary of the Universal Declaration of Human Rights');
-*/
-/*Insert 2019 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Luxembourg', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100th anniversary of Grand Duchess Charlotte accession to the throne');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8888,9 +8360,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Slovenia', 2019, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '100 years since the foundation of the University of Ljubljana');
-*/
-/*Insert 2020 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Italy', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '80th anniversary of the National Firefighters Corps');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -8992,9 +8463,8 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Luxembourg', 2020, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Birth of Prince Charles of Luxembourg');
-*/
-/*Insert 2021 year commemorative coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Portugal', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', 'Portuguese Presidency of the Council of the European Union');
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
@@ -9078,10 +8548,11 @@ INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickne
 INSERT INTO coin(country, issue_year, denomination, coin_type, diameter, thickness, mass, composition, edge, feature) 
     VALUES ('Vatican', 2021, '2', 'commemorative', 25.75, 2.2, 8.5, 'Inner part: copper-nickel, Inner part: Layers of nickel brass, nickel, nickel brass', 
 	'Reeded with inscription: "2 ** 2 ** 2 ** 2 ** 2 ** 2 **"', '700 years since the death of Dante Alighieri');
-*/
 
-/*Insert Estonian coin mintages into 'coin_mintage' table*/
-/*
+INSERT INTO coin_mintage (coin_id, mintage_total, uncirculated, brilliant_uncirculated, proof, mint) 
+    VALUES ('1', '32.000.000', '50.000', '3.500', 'Mint of Finland');
+INSERT INTO coin_mintage (coin_id, mintage_total, uncirculated, brilliant_uncirculated, proof, mint) 
+    VALUES ('2', '30.000.000', '50.000', '3.500', 'Mint of Finland');
 INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('9', '25.000.000', '2012', 'Mintage information source: https://www.eestipank.ee/en/notes-and-coins/euro-coins');
 INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
@@ -9180,9 +8651,8 @@ INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description
     VALUES ('3951', '750000', '27.01.2020', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
 INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('3955', '1000000', '1.02.2020', 'Mintage information source: hhttps://www.eestipank.ee/sularaha/2-eurosed-malestusmundid');
-*/
-/*Insert Finnish coin mintages into 'coin_mintage' table*/
-/*INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
+
+INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('629', '8100000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
 INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('630', '1785000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
@@ -9200,9 +8670,8 @@ INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description
     VALUES ('636', '16090000', '1999', 'Mintage information source: https://www.suomenpankki.fi/en/money-and-payments/euro-coins/number-of-minted-finnish-coins/');
 INSERT INTO coin_mintage(coin_id, mintage_total, issue_date, mintage_description) 
     VALUES ('3611', '1000000', 'June 2004', 'Mintage information source: https://www.ecb.europa.eu/euro/coins/comm/html/comm_2004.en.html');
-*/
-/*Insert Estonian coin images into 'coin' table*/
-/*UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/2eur_2011_500px.jpg' WHERE coin_id = 3705;
+
+UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/2eur_2011_500px.jpg' WHERE coin_id = 3705;
 UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/ellipp30_500px.jpg' WHERE coin_id = 3815;
 UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/keres_500px.jpg' WHERE coin_id = 3819;
 UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/eestipank.ee/files/eesti-teel-iseseisvusele_2eurone.png' WHERE coin_id = 3863;
@@ -9220,9 +8689,8 @@ UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/fil
 UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/50cent.jpg' WHERE coin_id = 6;
 UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/1eur.jpg' WHERE coin_id = 7;
 UPDATE coin SET obverse_image_path = 'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/kaibemundid/euro/2eur.jpg' WHERE coin_id = 8;
-*/
-/*Insert Estonian silver and gold coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path , diameter, 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path , diameter, 
 mass, edge, feature, coin_description) 
     VALUES ('Estonia', 2011, '10', 'silver', 
     'https://www.eestipank.ee/sites/default/files/files/Pangat2hed/meenemundid/euro/10eu_2011_a_w.jpg', 
@@ -9355,9 +8823,8 @@ mass, feature, coin_description)
     'https://www.eestipank.ee/sites/eestipank.ee/files/jaakson1_500px.jpg', 
     38.61, 28.28, 'Dedicated to the 150th anniversary of the birth of Jüri Jaakson', 
     'Metal: Ag 925. Source: https://www.eestipank.ee/en/notes-and-coins/euro-collector-coins');
-*/
-/*Insert Latvian silver and gold coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, reverse_image_path ,diameter, 
 mass, feature, coin_description) 
     VALUES ('Latvia', 2014, '5', 'silver', 
     'https://monetas.bank.lv/cache/thumbs/images_monetas_2014_2014_Baltijas_ce_Baltijas_Cels_rev_415_png_c3e6909ed52d5b1d2454c6d11d82131e_crop_415_by_415.png', 
@@ -9372,17 +8839,14 @@ mass, feature, coin_description)
     'https://monetas.bank.lv/cache/thumbs/images_stories_atteli_Nauda_kolekcijas_Pakav_rev_415_png_ca5fe73b0001a76b38157161ebe352f3_crop_332_by_332.png', 
     21.00, 6.00, 'Gold Brooches. The Horseshoe Fibula', 
     'Metal: 999.9° gold. Source: https://monetas.bank.lv/en/coins/gold-brooches-the-horseshoe-fibula');
-*/
-/*Insert Lithuanian silver coin into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type,diameter, 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type,diameter, 
 mass, feature, coin_description) 
     VALUES ('Lithuania', 2019, '20', 'silver', 
     38.61, 28.28, 'Coin dedicated to Sapieha Palace (from the series ''Lithuanian Castles and Manors'')', 
     'Metal: Ag 925 . Source: https://monetos.lb.lt/en/eshop/coin-dedicated-to-sapieha-palace-from-the-series-lithuanian-castles-and-manors');
-*/
-/*DELETE FROM coin WHERE coin_id=4049;*/
-/*Insert 'other' coins into 'coin' table*/
-/*INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, diameter, 
+
+INSERT INTO coin(country, issue_year, denomination, coin_type, obverse_image_path, diameter, 
 mass, feature, coin_description) 
     VALUES ('Portugal', 2020, '7.5', 'silver', 'https://en.numista.com/catalogue/photos/portugal/5efec215231e47.83991865-original.jpg',
     33, 13.5, 'Historical trains', 
@@ -9402,21 +8866,4 @@ mass, composition, edge, feature, coin_description)
     VALUES ('Lithuania', 2018, '1.5', 'other', 'https://en.numista.com/catalogue/photos/lituanie/860-original.jpg',
     27.5, 11.1, 'Copper-nickel', 'Reeded', 'The 50th Physicists Day of Vilnius University, FiDi 50', 
     'Source: https://en.numista.com/catalogue/pieces136669.html');
-*/
-/*Insert test data into 'added_coin' table*/
-/*INSERT INTO added_coin(user_id, coin_id, amount) VALUES (28, 1, 1);
-INSERT INTO added_coin(user_id, coin_id, amount) VALUES (28, 2, 1);
-INSERT INTO added_coin(user_id, coin_id, amount) VALUES (28, 3, 1);
-INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 4, 'UNC',1);
-INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 5, 'UNC', 1);
-INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 6, 'UNC', 1);
-INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 7, 'UNC', 1);
-INSERT INTO added_coin(user_id, coin_id, amount) VALUES (28, 8, 1);
-INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3931, 'UNC', 1);
-INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3948, 'UNC', 1);
-INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3705, 'UNC', 1);
-INSERT INTO added_coin(user_id, coin_id, amount) VALUES (28, 24, 1);
-INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3900, 'UNC', 1);
-INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3913, 'UNC', 1);
-INSERT INTO added_coin(user_id, coin_id, grade, amount) VALUES (28, 3653, 'UNC', 1);
 */
