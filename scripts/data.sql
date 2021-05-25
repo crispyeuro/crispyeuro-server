@@ -1,5 +1,6 @@
 /*
 This file contains initial coins and data related to initial coins.
+This data may be necessary to understand better how the application works.
 
 If the application is to be executed for the first time, 
 please uncomment the code below, execute the application, and comment the code below again.
