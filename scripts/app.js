@@ -181,6 +181,12 @@ app.get('/logout', function (serverRequest, serverResponse) {
     serverResponse.redirect('/static/login.html');
 });
 
+app.post('/recover', (serverRequest, serverResponse) => {
+    /*Functionality to be implemented in future tasks.*/
+    const email = serverRequest.body.email;
+    serverResponse.sendStatus(200);
+});
+
 /*Get username*/
 app.get('/api/layoutUsername', (serverRequest, serverResponse) => {
     let access_token = serverRequest.cookies['access-token'];

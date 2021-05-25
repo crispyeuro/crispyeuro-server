@@ -1,11 +1,13 @@
 /*
 This file contains test user accounts and added coins.
+This test data may be helpful to understand how the application works and to when exexuting automation tests.
 
 If the application is to be executed for the first time, 
 please uncomment the code below, execute the application, and comment the code below again.
 NB! The code below to be executed only once!
 */
 
+/*
 SELECT sign_up('testUser', 'testUser123456', 'test@test.com');
 SELECT sign_up('testUser2', 'testUser2123456', 'testUser2@test.com');
 SELECT sign_up('mari247', 'mari247', 'mari247@test.com');
@@ -47,3 +49,4 @@ INSERT INTO wanted_coin(user_id, coin_id, grade, amount) VALUES (2, 4, 'UNC', 1)
 INSERT INTO wanted_coin(user_id, coin_id, grade, amount) VALUES (2, 3705, 'UNC', 1);
 INSERT INTO wanted_coin(user_id, coin_id, grade, amount) VALUES (3, 3705, 'UNC', 1);
 INSERT INTO wanted_coin(user_id, coin_id, grade, amount) VALUES (3, 3705, 'UNC', 1);
+*/
