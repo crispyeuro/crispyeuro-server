@@ -8,8 +8,8 @@ NB! The code below to be executed only once!
 */
 
 /*
-SELECT sign_up('testUser', 'testUser123456', 'test@test.com');
-SELECT sign_up('testUser2', 'testUser2123456', 'testUser2@test.com');
+SELECT sign_up('testUser', 'testuser123456', 'test@test.com');
+SELECT sign_up('testUser2', 'testuser2123456', 'testUser2@test.com');
 SELECT sign_up('mari247', 'mari247', 'mari247@test.com');
 
 INSERT INTO added_coin(user_id, coin_id, grade, amount, swap_availability) VALUES (1, 1, 'BU', 1, false);
